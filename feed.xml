@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://geek-rabb1t.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://geek-rabb1t.github.io/" rel="alternate" type="text/html" /><updated>2025-01-31T04:02:47+00:00</updated><id>https://geek-rabb1t.github.io/feed.xml</id><title type="html">うさきーぼー堂の裏側</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>geek-rabb1t</name></author><entry><title type="html">Futabaビルドガイド</title><link href="https://geek-rabb1t.github.io/%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89/2024/12/24/futaba-build-guide.html" rel="alternate" type="text/html" title="Futabaビルドガイド" /><published>2024-12-24T08:07:33+00:00</published><updated>2024-12-24T08:07:33+00:00</updated><id>https://geek-rabb1t.github.io/%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89/2024/12/24/futaba-build-guide</id><content type="html" xml:base="https://geek-rabb1t.github.io/%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89/2024/12/24/futaba-build-guide.html"><![CDATA[<h2 id="準備">準備</h2>
+
+<p>組み立て前に同梱物や、追加で必要な部品を確認してください。</p>
+
+<h3 id="内容物の確認">内容物の確認</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>分類</th>
+      <th>部品</th>
+      <th style="text-align: right">同梱数</th>
+      <th>写真</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ケース</td>
+      <td>トップケース</td>
+      <td style="text-align: right">1</td>
+      <td><font color="red">写真</font></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ボトムケース</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>フォーム</td>
+      <td>トップフォーム (右・中・左)</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ボトムフォーム (右・中・左)</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>PCB</td>
+      <td>メインPCB</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>電子部品</td>
+      <td>トラックパッドモジュール</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>chocソケット</td>
+      <td style="text-align: right">49</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ロータリーエンコーダー(型番: EC12E2420301)</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>マイコンボード (型番: RP2040-Zero)</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>フラットケーブル (0.5mmピッチ6ピン  )</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>部品</td>
+      <td>クリッカー</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ホイール</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>トラックパッドカバー (マット黒アクリル)</td>
+      <td style="text-align: right">1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>タッピングビス(短)  - M3 長さ6mm</td>
+      <td style="text-align: right">2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>タッピングビス(長)  - M3 長さ8mm</td>
+      <td style="text-align: right">6</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ゴム足</td>
+      <td style="text-align: right">10</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>メインPCBはダイオードとFFCコネクタがあらかじめ実装済みです。</li>
+</ul>
+
+<h3 id="自分で用意するもの">自分で用意するもの</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>部品</th>
+      <th>必要数</th>
+      <th>補足</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kailh ChocV1もしくは、Kailh ChocV2スイッチ</td>
+      <td>49</td>
+      <td>ChocV2互換のLofree Ghost等、 Kailh x Lofree Low-profileスイッチも対応</td>
+    </tr>
+    <tr>
+      <td>Low Profile対応1Uサイズキーキャップ</td>
+      <td>49</td>
+      <td>ChocV1とChocV2で軸の形が違うので間違えて買わないよう注意</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>ぎーくらびっとのおススメスイッチ</p>
+<ul>
+  <li><a href="https://talpkeyboard.net/items/66a056514c088e035d0344b3">Kailh Deep Sea Silent MINI ロープロファイルスイッチ Islet</a></li>
+  <li><a href="https://talpkeyboard.net/items/66a0596a545dc7002b5dea18">Kailh Deep Sea Silent MINI ロープロファイルスイッチ Whale</a></li>
+  <li><a href="https://lofree.co.jp/products/ghost-low-profile-pom-switches?variant=50487412556007">Kailh x Lofree Ghost</a></li>
+</ul>
+
+<p>確認済みキーキャップ</p>
+<ul>
+  <li><a href="https://talpkeyboard.net/?category_id=66e79046a6782d33e6380dab">Tai-Hao Thins</a></li>
+  <li><a href="https://amzn.asia/d/cjRH1xz">XVXロープロファイルキーキャップ</a></li>
+</ul>
+
+<h2 id="組み立てに必要な工具や道具">組み立てに必要な工具や道具</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>道具</th>
+      <th>用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>はんだごて</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>はんだ</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ニッパー</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ドライバー</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>逆作用ピンセット</td>
+      <td>chocソケットの取り付けに使います</td>
+    </tr>
+    <tr>
+      <td>両面テープ</td>
+      <td>トラックパッドの固定に使用します</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="組み立て方">組み立て方</h2>
+
+<p>まず、PCBの表裏について説明します。</p>
+
+<ul>
+  <li>表面<br />
+表面はキースイッチをはめる面です。<br />
+こちらの面にはマイクロスイッチとロータリーエンコーダーを実装します。</li>
+</ul>
+<font color="red">実装前の写真</font>
+<font color="red">実装後の写真</font>
+
+<ul>
+  <li>裏面<br />
+Futabaという文字が印刷されており、あらかじめダイオードやFFCコネクタが実装されている面が裏面です。<br />
+こちらの面には、chocソケットと、マイコンボードを実装します。</li>
+</ul>
+<font color="red">実装前の写真</font>
+<font color="red">実装後の写真</font>
+
+<h3 id="電子部品のはんだ付け">電子部品のはんだ付け</h3>
+
+<h4 id="chocソケットの取り付け">chocソケットの取り付け</h4>
+
+<p>PCBの裏面で作業します。</p>
+
+<p>chocソケットには向きがあります。向きを間違えるとスイッチが外れやすくなったり、キー入力できない場合があります。ソケットの向きを間違えないように注意してください。</p>
+
+<font color="red">写真</font>
+
+<p>また、PCBが薄いためchocソケットがPCBからはみ出します。そのため、一つ一つ、逆作用ピンセットで抑えながらはんだ付けしてください。</p>
+
+<font color="red">写真</font>
+
+<p>ピンセットで固定するため以下の順番に作業してください。</p>
+
+<font color="red">写真</font>
+
+<h4 id="マイコンボードrp2040-zeroの取り付け">マイコンボード(RP2040-Zero)の取り付け</h4>
+
+<p><strong>事前にマイコンが不良品でないか確認する</strong></p>
+
+<p>PCBの裏面にRP2040-Zeroに付属のピンヘッダーを差し込み、その上にRP2040-Zeroを載せます。
+写真のように、USBコネクタの実装面が見えるように差し込みます。
+逆作用ピンセットでにRP2040-Zeroを抑えながら、PCBからはみ出た四隅のピンをニッパーで切ります。
+ニッパーで切り落としたら、四隅だけはんだ付けします。</p>
+
+<font color="red">写真</font>
+
+<p>RP2040-Zero からはみ出たピンも同じようにニッパーで切り落としはんだ付けします。</p>
+
+<font color="red">写真</font>
+
+<p>これでPCBとRP2040-Zeroが固定されるので、逆作用ピンセットは外してください。</p>
+
+<p>PCB側の残りのピンを全て切り取り、はんだ付けします。</p>
+
+<font color="red">写真</font>
+
+<p>RP2040-Zeroも同様にはみ出たピンを全て切り取り、はんだ付けします。</p>
+
+<font color="red">写真</font>
+
+<h4 id="マイクロスイッチの取り付け">マイクロスイッチの取り付け</h4>
+
+<p>ここからは、PCBの向きが変わります。注意してください。</p>
+
+<p>PCBの表面にマイクロスイッチを差し込みます。
+マイクロスイッチを逆作用ピンセットで抑えた状態ではみ出た足をニッパーで切り取ります。</p>
+
+<font color="red">写真</font>
+
+<p>ピンセットで固定したままはんだ付けします。</p>
+
+<font color="red">写真</font>
+
+<h4 id="ロータリーエンコーダーの取り付け">ロータリーエンコーダーの取り付け</h4>
+
+<p>PCBの表側からロータリーエンコーダーを差し込みます。
+PCBからはみ出した細い3本の足をニッパーで切り取ります。</p>
+
+<font color="red">写真</font>
+
+<p>ニッパーで切り取った足をはんだ付けします。</p>
+
+<font color="red">写真</font>
+
+<p>2本の太い足を切り取り、はんだ付けします。</p>
+
+<font color="red">写真</font>
+
+<p>はんだ付けは以上となります。</p>
+
+<h3 id="各種部品の取り付け">各種部品の取り付け</h3>
+
+<h4 id="スイッチの取り付け">スイッチの取り付け</h4>
+
+<p>PCBの表面の上にトップフォームを重ね、上からスイッチをはめ込みます。</p>
+
+<font color="red">写真</font>
+
+<h4 id="クリッカーの取り付け">クリッカーの取り付け</h4>
+
+<p>PCBの表面のからクリッカーをはめます。
+写真の赤枠部分をつぶすようにつまみながら、下に押し込みます。</p>
+
+<font color="red">写真</font>
+
+<p>取り外すときは、同じようにつまみながら引き抜きます。</p>
+
+<h4 id="ホイールの取り付け">ホイールの取り付け</h4>
+
+<p>クリッカーが取り付け済みであることを確認してから、エンコーダーにホイールを取り付けます。</p>
+
+<font color="red">写真</font>
+
+<h3 id="動作確認">動作確認</h3>
+
+<h4 id="ファームウェアの書き込み">ファームウェアの書き込み</h4>
+
+<h4 id="各キーの動作確認">各キーの動作確認</h4>
+
+<p>全部のキーを入力し、正しく入力できるか確認してください。</p>
+
+<h5 id="特定のキー入力が認識されない場合">特定のキー入力が認識されない場合</h5>
+
+<p>キースイッチが正しくは嵌っていないか、ソケットが正しくはんだ付けできていない可能性が高いです。
+キースイッチを刺し直しても改善しない場合は、ソケットのはんだ付けをやり直してください。</p>
+
+<h5 id="特定の行または列の入力が全て認識されない場合">特定の行または、列の入力が全て認識されない場合</h5>
+
+<p>RP2040-Zero が正しく接続されていない可能性があります。はんだ付けをやり直してください。</p>
+
+<h4 id="ホイールの動作確認">ホイールの動作確認</h4>
+
+<p>ホイールの回転とホイールクリックで入力が発生するか確認してください。</p>
+
+<h5 id="ホイールの回転で入力できない場合">ホイールの回転で入力できない場合</h5>
+
+<p>ロータリーエンコーダーが正しくはんだ付けできているか確認してください。
+ロータリーエンコーダーのはんだ付けに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<h5 id="ホイールクリックで入力できない場合">ホイールクリックで入力できない場合</h5>
+
+<p>マイクロスイッチが正しくはんだ付けできているか確認してください。
+マイクロスイッチのはんだ付けに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<h4 id="トラックパッドの動作確認">トラックパッドの動作確認</h4>
+
+<p>始めに、PCBからUSBケーブルを抜きます。</p>
+
+<font color="red">写真</font>
+
+<p>FFCコネクタの黒い部分をトラックパッドと平行に引っ張り、ロックを解除します。</p>
+
+<font color="red">写真</font>
+
+<p>フラットケーブルの青い面を上にして、フラットケーブルをまっすぐ差し込みます。</p>
+
+<font color="red">写真</font>
+
+<p>FFCコネクタの黒い部分を押し込み、ロックします。</p>
+
+<font color="red">写真</font>
+
+<p>トラックパッドをトップケースの上に載せます。
+この時点では固定しません。</p>
+
+<font color="red">写真</font>
+
+<p>トラックパッドと同様の手順でフラットケーブルをPCBに接続します。</p>
+
+<font color="red">写真</font>
+
+<p>トラックパッドの上にトラックパッドカバー（マットアクリル板）を載せます。
+このとき、トラックパッドとカバーの間に隙間ができないよう注意してください。</p>
+
+<font color="red">写真</font>
+
+<p>PCBにUSBケーブルを差し込みます。</p>
+
+<font color="red">写真</font>
+
+<p>トラックパッド上で指を動かし、カーソルが動くか確認してください。
+この時点では仮固定の状態なのでカーソルの反応が悪い可能性があります。
+強めに触って反応すれば問題ないので、次の手順に進んでください。</p>
+
+<font color="red">写真</font>
+
+<h5 id="トラックパッドが反応しない場合">トラックパッドが反応しない場合</h5>
+
+<p>トラックパッド側とPCB側のフラットケーブルコネクタを確認し、ケーブルがまっすぐ奥まで差し込めているか確認してください。
+ケーブルに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<h3 id="ケースへの組み込み">ケースへの組み込み</h3>
+
+<h4 id="トラックパッドの固定">トラックパッドの固定</h4>
+
+<p>写真のようにトラックパッド裏側に両面テープを貼ります。</p>
+
+<font color="red">写真</font>
+
+<p>トラックパッドにフラットケーブルを取り付けます。</p>
+
+<font color="red">写真</font>
+
+<p>両面テープの剥離紙をはがし、トラックパッドをトップケースに固定します。</p>
+
+<font color="red">写真</font>
+
+<p>トラックパッドカバーの保護紙をはがします。
+表裏で触り心地が異なります。</p>
+
+<font color="red">写真</font>
+
+<h4 id="pcbの取り付け">PCBの取り付け</h4>
+
+<p>PCBの表面がトップケース側に来るようにして、PCBをたわませながら、ホイールをトップケースの隙間に差し込みます。
+スイッチが干渉して作業しにくい場合は、一部のスイッチを外してください。
+このとき、無理な力を入れないでください。</p>
+
+<font color="red">写真</font>
+
+<p>タッピングビス(短)  を使い、 PCBをトップケースに固定します。</p>
+
+<font color="red">写真</font>
+
+<p>フラットケーブルをPCBに差し込み、トラックパッドと接続します。</p>
+
+<font color="red">写真</font>
+
+<h4 id="ケースの固定">ケースの固定</h4>
+
+<p>トップケースに固定されたPCBの上に、ボトムフォームをのせます。ボトムフォームは表裏があるので注意してください。フォームの穴がソケットを避けるようにのせます。</p>
+
+<font color="red">写真</font>
+
+<p>フォームの上からボトムケースを載せて、タッピングビス(長) を使って固定します。</p>
+
+<font color="red">写真</font>
+
+<p>分解して再度組み立てる時には、タッピングビスで新たなネジ山を作らないように注意してください。
+一度タッピングビスでネジを切っている場合、最初は逆方向に回して、ネジが下に下がったところから正しい方向に回して締め付けます。こうすることで新たなネジ山を作ることなく締め付けることができます。</p>
+
+<h4 id="ゴム足の取り付け">ゴム足の取り付け</h4>
+
+<p>ボトムケースの六角形の凹みに合わせて、ゴム足を6箇所取り付けます。ゴム足取り付け後、表面の保護フィルムをはがしてください。</p>
+
+<font color="red">写真</font>
+
+<p>もしケースが浮く場合は余ったゴム足を追加で貼り付けて調整してください。
+ホイールクリックで筐体が動かないよう、少し粘着力が強いゴム足を使っています。
+グリップが強すぎて気になる場合は別のゴム足を調達してください。</p>
+
+<p>キットに付属のゴム足は、 <a href="https://amzn.asia/d/510jOX4">GRIPLUSの六角形のも</a>のです。</p>
+
+<h4 id="最終確認">最終確認</h4>
+
+<p>USBケーブルを差し込み、最終的な動作確認を行ってください。PCに接続しても認識しない場合は、USBケーブルが奥まで差し込まれているか確認してください。奥まで差し込んでいても認識しない場合は、PCBの固定位置を調整してください。</p>
+
+<font color="red">写真</font>
+
+<p>ここまで来たら組み立て完了です。<br />
+出来上がった作品は <code class="language-plaintext highlighter-rouge">#futaba_kbd</code> タグをつけてSNSに投稿してください。<br />
+Futabaで楽しく快適な自作キーボードライフを過ごしてくださいね～</p>
+
+<h2 id="組み立てが終わったら">組み立てが終わったら</h2>
+
+<ul>
+  <li><a href="/%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89/2024/12/24/futaba-customize-guide.html">Futabaのカスタマイズ</a> ページを見ながら使いやすいようにカスタマイズしてください。</li>
+</ul>]]></content><author><name>geek-rabb1t</name></author><category term="ビルドガイド" /><category term="Futaba" /><category term="Build Guide" /><summary type="html"><![CDATA[準備]]></summary></entry><entry><title type="html">Futabaカスタマイズガイド</title><link href="https://geek-rabb1t.github.io/%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89/2024/12/24/futaba-customize-guide.html" rel="alternate" type="text/html" title="Futabaカスタマイズガイド" /><published>2024-12-24T08:07:33+00:00</published><updated>2024-12-24T08:07:33+00:00</updated><id>https://geek-rabb1t.github.io/%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89/2024/12/24/futaba-customize-guide</id><content type="html" xml:base="https://geek-rabb1t.github.io/%E3%83%93%E3%83%AB%E3%83%89%E3%82%AC%E3%82%A4%E3%83%89/2024/12/24/futaba-customize-guide.html"><![CDATA[<h2 id="カスタマイズ">カスタマイズ</h2>
+
+<h3 id="キーマップのカスタマイズ">キーマップのカスタマイズ</h3>
+
+<h3 id="トラックパッドのカスタマイズ">トラックパッドのカスタマイズ</h3>
+
+<h4 id="スクロール方向">スクロール方向</h4>
+
+<h4 id="スワイプジェスチャ">スワイプジェスチャ</h4>
+
+<p>3本指、4本指のスワイプジェスチャを任意のコマンドに変更できます。</p>
+
+<p>初期状態は</p>
+
+<h4 id="3本指タップドラッグの無効化">3本指タップ/ドラッグの無効化</h4>
+
+<p>3本指タップや3本指ドラッグが スワイプジェスチャと干渉して使いにくい場合、</p>
+
+<h2 id="オリジナルファームウェアの作成">オリジナルファームウェアの作成</h2>
+
+<p>https://github.com/geek-rabb1t/vial-qmk/tree/futaba/keyboards/futaba</p>
+
+<h3 id="ホイールを軽くする">ホイールを軽くする</h3>
+
+<p>ホイールを軽くしたい場合、使用するロータリーエンコーダーを遊舎工房さん等で取り扱いのある<a href="https://shop.yushakobo.jp/products/2141">低トルクタイプのロータリーエンコーダー(EC12E2440301)</a>に交換することで軽い操作感に変更することができます。</p>]]></content><author><name>geek-rabb1t</name></author><category term="ビルドガイド" /><category term="Futaba" /><category term="Customize Guide" /><summary type="html"><![CDATA[カスタマイズ]]></summary></entry></feed>

@@ -3,7 +3,7 @@ layout: post
 title:  "Futabaカスタマイズガイド"
 date:   2024-12-24 08:07:33 +0000
 categories: 
-  - ビルドガイド
+  - customize
 tags:
   - Futaba
   - Customize Guide

@@ -3,7 +3,7 @@ layout: post
 title:  "Futabaビルドガイド"
 date:   2024-12-24 08:07:33 +0000
 categories: 
-  - ビルドガイド
+  - build_guide
 tags:
   - Futaba
   - Build Guide

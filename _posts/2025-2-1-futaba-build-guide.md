@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Futabaビルドガイド"
-date:   2024-12-24 08:07:33 +0000
+date:   2025-2-1 00:00:01 +0000
 categories: 
   - build_guide
 tags:
   - Futaba
   - Build Guide
 banner: "/assets/images/futaba_build_guide/DSCF3446.jpg"
-permalink: /build_guide/futaba
+permalink: /futaba/build_guide
 ---
 
 ## 準備
@@ -23,23 +23,23 @@ permalink: /build_guide/futaba
 | 分類     | 部品                                       | 同梱数 | 写真                                                                       |
 | -------- | ------------------------------------------ | -----: | -------------------------------------------------------------------------- |
 | ケース   | トップケース                               |      1 | <img src="/assets/images/futaba_build_guide/DSCF3283.jpg" width="100px">   |
-|          | ボトムケース                               |      1 | <img src="/assets/images/futaba_build_guide/DSCF3285.jpg" width="100px">   |
+| ^^       | ボトムケース                               |      1 | <img src="/assets/images/futaba_build_guide/DSCF3285.jpg" width="100px">   |
 | フォーム | トップフォーム (右・中・左)                |      1 | <img src="/assets/images/futaba_build_guide/DSCF3290.jpg" width="100px">   |
-|          | ボトムフォーム (右・中・左)                |      1 | <img src="/assets/images/futaba_build_guide/DSCF3292.jpg" width="100px">   |
+| ^^       | ボトムフォーム (右・中・左)                |      1 | <img src="/assets/images/futaba_build_guide/DSCF3292.jpg" width="100px">   |
 | PCB      | メインPCB                                  |      1 | <img src="/assets/images/futaba_build_guide/DSCF3281.jpg" width="100px">   |
 | 電子部品 | トラックパッドモジュール                   |      1 | <img src="/assets/images/futaba_build_guide/DSCF3294_1.jpg" width="100px"> |
-|          | chocソケット                               |     49 | <img src="/assets/images/futaba_build_guide/DSCF3313_1.jpg" width="100px"> |
-|          | ロータリーエンコーダー(型番: EC12E2420301) |      1 | <img src="/assets/images/futaba_build_guide/DSCF3307_1.jpg" width="100px"> |
-|          | マイコンボード (型番: RP2040-Zero)         |      1 | <img src="/assets/images/futaba_build_guide/DSCF3295_1.jpg" width="100px"> |
-|          | マイクロスイッチ                           |      1 | <img src="/assets/images/futaba_build_guide/DSCF3318_1.jpg" width="100px"> |
-|          | フラットケーブル (0.5mmピッチ6ピン  )      |      1 | <img src="/assets/images/futaba_build_guide/DSCF3330.jpg" width="100px">   |
-|          | ピンヘッダ (2.54mmピッチ40ピン  )          |      1 | <img src="/assets/images/futaba_build_guide/DSCF3346.jpg" width="100px">   |
+| ^^       | chocソケット                               |     49 | <img src="/assets/images/futaba_build_guide/DSCF3313_1.jpg" width="100px"> |
+| ^^       | ロータリーエンコーダー(型番: EC12E2420301) |      1 | <img src="/assets/images/futaba_build_guide/DSCF3307_1.jpg" width="100px"> |
+| ^^       | マイコンボード (型番: RP2040-Zero)         |      1 | <img src="/assets/images/futaba_build_guide/DSCF3295_1.jpg" width="100px"> |
+| ^^       | マイクロスイッチ                           |      1 | <img src="/assets/images/futaba_build_guide/DSCF3318_1.jpg" width="100px"> |
+| ^^       | フラットケーブル (0.5mmピッチ6ピン  )      |      1 | <img src="/assets/images/futaba_build_guide/DSCF3330.jpg" width="100px">   |
+| ^^       | ピンヘッダ (2.54mmピッチ40ピン  )          |      1 | <img src="/assets/images/futaba_build_guide/DSCF3346.jpg" width="100px">   |
 | 部品     | クリッカー                                 |      1 | <img src="/assets/images/futaba_build_guide/DSCF3305_1.jpg" width="100px"> |
-|          | ホイール                                   |      1 | <img src="/assets/images/futaba_build_guide/DSCF3296_1.jpg" width="100px"> |
-|          | トラックパッドカバー (マット黒アクリル)    |      1 | <img src="/assets/images/futaba_build_guide/DSCF3320_1.jpg" width="100px"> |
-|          | タッピングビス(短)  - M3 長さ6mm           |      2 | <img src="/assets/images/futaba_build_guide/DSCF3321_2.jpg" width="100px"> |
-|          | タッピングビス(長)  - M3 長さ8mm           |      6 | <img src="/assets/images/futaba_build_guide/DSCF3321_3.jpg" width="100px"> |
-|          | ゴム足                                     |     10 | <img src="/assets/images/futaba_build_guide/DSCFXXX.jpg" width="100px">    |
+| ^^       | ホイール                                   |      1 | <img src="/assets/images/futaba_build_guide/DSCF3296_1.jpg" width="100px"> |
+| ^^       | トラックパッドカバー (マット黒アクリル)    |      1 | <img src="/assets/images/futaba_build_guide/DSCF3320_1.jpg" width="100px"> |
+| ^^       | タッピングビス(短)  - M3 長さ6mm           |      2 | <img src="/assets/images/futaba_build_guide/DSCF3321_2.jpg" width="100px"> |
+| ^^       | タッピングビス(長)  - M3 長さ8mm           |      6 | <img src="/assets/images/futaba_build_guide/DSCF3321_3.jpg" width="100px"> |
+| ^^       | ゴム足                                     |     10 | <img src="/assets/images/futaba_build_guide/DSCFXXX.jpg" width="100px">    |
 
 
 
@@ -78,10 +78,12 @@ permalink: /build_guide/futaba
 
 まず、PCBの表裏について説明します。
 
-| 面  | 実装前                                                               | 実装後                                                                   | 説明                                                                                              |
-| --- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| 表  | <img src="/assets/images/futaba_build_guide/DSCF3282.jpg" width="200px"> | <img src="/assets/images/futaba_build_guide/DSCF3382.jpg" width="200px"> | 表面はキースイッチをはめる面です。こちらにはマイクロスイッチとロータリーエンコーダーを実装します。|
-| 裏  | <img src="/assets/images/futaba_build_guide/DSCF3281.jpg" width="200px"> | <img src="/assets/images/futaba_build_guide/DSCF3385.jpg" width="200px"> | Futabaという文字が印刷されています。あらかじめ一部の部品が実装されています。  |
+| 面  | 実装前                                                                   | 実装後                                                                   | 説明                                                   |
+| --- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------ |
+| 表  | <img src="/assets/images/futaba_build_guide/DSCF3282.jpg" width="200px"> | <img src="/assets/images/futaba_build_guide/DSCF3382.jpg" width="200px"> | 表面はキースイッチをはめる面です。\                    |
+| \|  | \|                                                                       | \|                                                                       | マイクロスイッチとロータリーエンコーダーを実装します。 |
+| 裏  | <img src="/assets/images/futaba_build_guide/DSCF3281.jpg" width="200px"> | <img src="/assets/images/futaba_build_guide/DSCF3385.jpg" width="200px"> | Futabaと印刷されています。\                            |
+| \|  | \|                                                                       | \|                                                                       | 一部の部品は実装済みです。                             |
 
 
 

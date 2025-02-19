@@ -19,7 +19,6 @@ Vial上でカスタマイズできます。
 
 ### レイヤー0(デフォルトレイヤー)
 
-<font color=red>Vialのマッピング間違ってる。</font>
 ![layer-0](/assets/images/futaba/customize/layer-0.jpg)
 
 ### レイヤー1

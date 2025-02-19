@@ -4,15 +4,23 @@ title: About
 permalink: /about
 ---
 
-<h2>About</h2>
+## About
 
-<p>
-:art:&nbsp;Yet another theme for elegant writers with modern flat style
-and beautiful night mode.
-</p>
+![logo](/assets/images/logo.svg)
 
-<p>
-Hey, nice to meet you, you found this Jekyll theme. Here the yet another
-theme is a modern theme, and it's quite clear, clean and neat for writers
-and posts.
-</p>
+
+キーボードを作るさぎ
+
+趣味でキーボードを設計しています。
+
+作ったものは [Works](/works/) をご覧ください。
+
+キーボードキットは、<i class="fa fa-shopping-cart"></i> [うさきーぼー堂](https://geek-rabb1t.booth.pm/) か、一部、[遊舎工房](https://yushakobo.jp/)さんで委託販売しています。
+
+
+## SNS
+
+- <i class="fa fa-shopping-cart"></i>Booth : [うさきーぼー堂](https://geek-rabb1t.booth.pm/)
+-  <i class="fa fa-twitter"></i>Twitter : [@geek_rabb1t](https://x.com/geek_rabb1t)
+- <i class="fa fa-github"></i>Github : [geek-rabb1t](https://github.com/geek-rabb1t)
+

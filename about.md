@@ -18,7 +18,7 @@ permalink: /about
 キーボードキットは、<i class="fa fa-shopping-cart"></i> [うさきーぼー堂](https://geek-rabb1t.booth.pm/) か、一部、[遊舎工房](https://yushakobo.jp/)さんで委託販売しています。
 
 
-## SNS
+## SNS & Links
 
 - <i class="fa fa-shopping-cart"></i>Booth : [うさきーぼー堂](https://geek-rabb1t.booth.pm/)
 -  <i class="fa fa-twitter"></i>Twitter : [@geek_rabb1t](https://x.com/geek_rabb1t)

@@ -1,8 +1,15 @@
 ---
-layout: articles
-heading: 'Your awesome heading'
-subheading: 'Your awesome subheading'
+layout: framework
 banner: 'default'
 ---
 
-{{ content }}
+<div class="articles">
+    {% if page.banner == nil %}
+      {% assign banner = page.title %}
+    {% endif %}
+  
+    {{ content }}
+  
+    {% include views/pagination.html %}
+  </div>
+  

@@ -100,7 +100,7 @@
           })();
         </script>
       {%- else -%}
-        <div style="background-image: url({{ banner_image }})"></div>
+        <div style="background-image: linear-gradient(180deg, rgba(120, 120, 120, 0.8), rgba(200, 200, 200, 0.1) 80px, rgba(255, 255, 255, 0) 120px),url({{ banner_image }})"></div>
         <img class="img-placeholder" src="{{ banner_image }}">
       {%- endif -%}
     </div>

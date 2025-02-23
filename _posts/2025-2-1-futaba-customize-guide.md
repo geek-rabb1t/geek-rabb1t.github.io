@@ -8,6 +8,7 @@ tags:
   - Futaba
   - Customize Guide
 banner: "/assets/images/futaba/DSCF3466_1.jpg"
+image: "/assets/images/futaba/DSCF3466_1.jpg"
 permalink: /futaba/customize_guide
 ---
 

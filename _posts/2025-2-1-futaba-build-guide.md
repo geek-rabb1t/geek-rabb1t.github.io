@@ -8,6 +8,7 @@ tags:
   - Futaba
   - Build Guide
 banner: "/assets/images/futaba_build_guide/DSCF3446.jpg"
+image: "/assets/images/futaba_build_guide/DSCF3446.jpg"
 permalink: /futaba/build_guide
 ---
 

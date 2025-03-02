@@ -40,7 +40,7 @@ permalink: /futaba/build_guide
 | ^^       | トラックパッドカバー (マット黒アクリル)    |      1 | <img src="/assets/images/futaba_build_guide/DSCF3320_1.jpg" width="100px"> |
 | ^^       | タッピングビス(短)  - M3 長さ6mm           |      2 | <img src="/assets/images/futaba_build_guide/DSCF3321_2.jpg" width="100px"> |
 | ^^       | タッピングビス(長)  - M3 長さ8mm           |      6 | <img src="/assets/images/futaba_build_guide/DSCF3321_3.jpg" width="100px"> |
-| ^^       | ゴム足                                     |     10 | <img src="/assets/images/futaba_build_guide/DSCFXXX.jpg" width="100px">    |
+| ^^       | ゴム足                                     |     10 | <img src="/assets/images/futaba_build_guide/DSCF3586.jpg" width="100px">    |
 
 
 

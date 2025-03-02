@@ -108,17 +108,22 @@ chocソケットには向きがあります。向きを間違えるとスイッ�
 
 #### マイコンボード(RP2040-Zero)の取り付け
 
+**ファームウェアの書き込み**
 
-#### あらかじめ、マイコンにファームウェアを書き込みます。
+はんだ付け前にマイコンにファームウェアを書き込みます。
 
 マイコンにUSBケーブルを接続し、PCと接続します。  
-ストレージデバイスとして認識するので、エクスプローラーで開き、以下のリンク先のファイルをコピーします。  
-ストレージとして認識しない場合、RESETとBOOTボタンを同時に押してください。
+ストレージデバイスとして認識するので、リンク先からダウンロードしたファームウェアをコピーします。  
 
-<font color=red>ファームウェア公開後、ここにリンクを貼る</font>
+ビルド済みファームウェアへのリンク:  
+[https://github.com/geek-rabb1t/futaba/raw/refs/heads/master/firmware/geek_rabb1t_futaba_vial.uf2](https://github.com/geek-rabb1t/futaba/raw/refs/heads/master/firmware/geek_rabb1t_futaba_vial.uf2)
+
+ストレージとして認識しない場合、RESETとBOOTボタンを同時に押してください。
 
 ![ファームウェアの書き込み](/assets/images/futaba_build_guide/screenshot_1.png)
 
+**マイコンのはんだ付け手順**
+ 
 キット付属のピンヘッダをニッパーで切り分けます。
 切り分けた後のピンヘッダ
 

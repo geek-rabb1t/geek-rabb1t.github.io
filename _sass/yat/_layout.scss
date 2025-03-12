@@ -621,7 +621,7 @@ html {
 
     color: $banner-text-color;
     padding: 10px 5px;
-    text-shadow: 1px 1px 2px #33333355;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 
     & > *:first-child {
       margin: 0;

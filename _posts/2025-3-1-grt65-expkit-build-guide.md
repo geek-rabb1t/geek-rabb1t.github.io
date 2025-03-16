@@ -31,12 +31,12 @@ permalink: /grt65-expkit/build_guide
 | ^^       | ピンヘッダ (2.54mmピッチ40ピン  )       |      1 | <img src="/assets/images/futaba_build_guide/DSCF3346.jpg" width="100px">   |
 | 部品     | トラックパッドカバー (マット黒アクリル) |      1 | <img src="/assets/images/futaba_build_guide/DSCF3320_1.jpg" width="100px"> |
 | ^^       | キャップボルト - M2 長さ10mm             |      4 | <img src="/assets/images/grt65-expkit/DSCF3735_1.jpg" width="100px"> |
-| ^^       | タッピングビス(長)  - M2 長さ3.5mm        |      4 | <img src="/assets/images/grt65-expkit/DSCF3735_2.jpg" width="100px"> |
-| ^^       | 中空スペーサー  - M2 長さ3.5mm            |      4 | <img src="/assets/images/grt65-expkit/DSCF3734_1.jpg" width="100px"> |
-| ^^       | 両メネジスペーサー - M2 長さ6mm         |      4 | <img src="/assets/images/grt65-expkit/DSCF3734_2.jpg" width="100px"> |
+| ^^       | 低頭小ねじ  - M2 長さ3.5mm        |      4 | <img src="/assets/images/grt65-expkit/DSCF3735_2.jpg" width="100px"> |
+| ^^       | 両メネジスペーサー - M2 長さ6mm             |      4 | <img src="/assets/images/grt65-expkit/DSCF3734_1.jpg" width="100px"> |
+| ^^       | 中空スペーサー  - M2 長さ3.5mm        |      4 | <img src="/assets/images/grt65-expkit/DSCF3734_2.jpg" width="100px"> |
 | ^^       | ゴム足                                  |     4 | <img src="/assets/images/grt65-expkit/DSCF3733.jpg" width="100px">   |
 
-注意: フラットケーブルの長さは、写真のものより短い場合があります。
+注意: 付属のフラットケーブルは、写真のものより短い場合があります。
 
 ### 自分で用意するもの
 
@@ -227,7 +227,7 @@ FFCコネクタの黒い部分を押し込み、ロックします。
 
 Chrome等WebHIDに対応したブラウザの場合、 以下のURLにアクセスして ブラウザ版のアプリを起動します。
 
-https://vial.rocks/
+ [https://vial.rocks/](https://vial.rocks/)
 
 `Start Vial` ボタンが表示される場合、そのままボタンを押して、 Vialを開始します。
 
@@ -241,7 +241,7 @@ https://vial.rocks/
 ボタンが表示されない場合はWebHID非対応ブラウザなので、デスクトップアプリを使用してください。  
 非対応ブラウザの場合は以下のURLから `Download Vial` を選んで、デスクトップアプリをインストールできます。
 
-https://get.vial.today/
+ [https://get.vial.today/](https://get.vial.today/)
 
 ここでは利用者の多そうなブラウザ版で説明します。
 デスクトップ版も同じ操作です。
@@ -338,7 +338,7 @@ TglV, TglH, En3T, Dis3T は入力するたびに、マイコンの設定が書�
 #### 特定のキー入力が認識されない場合
 
 キースイッチもしくは、マイコンのはんだ付けに失敗している可能性が高いです。  
-はんだ付けを確認してくださいｌ。
+はんだ付けを確認してください。
 
 ##### トラックパッドが反応しない場合
 

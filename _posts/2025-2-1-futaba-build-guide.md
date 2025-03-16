@@ -220,7 +220,7 @@ PCBの表面のからクリッカーをはめます。
 
 Chrome等WebHIDに対応したブラウザの場合、 以下のURLにアクセスして ブラウザ版のアプリを起動します。
 
-https://vial.rocks/
+[https://vial.rocks/](https://vial.rocks/)
 
 `Start Vial` ボタンが表示される場合、そのままボタンを押して、 Vialを開始します。
 
@@ -234,7 +234,7 @@ https://vial.rocks/
 ボタンが表示されない場合はWebHID非対応ブラウザなので、デスクトップアプリを使用してください。  
 非対応ブラウザの場合は以下のURLから `Download Vial` を選んで、デスクトップアプリをインストールできます。
 
-https://get.vial.today/
+[https://get.vial.today/](https://get.vial.today/)
 
 ここでは利用者の多そうなブラウザ版で説明します。
 デスクトップ版も同じ操作です。

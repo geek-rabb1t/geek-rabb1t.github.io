@@ -21,7 +21,7 @@ Futabaに採用したトラックパッド単体を簡単にお試しするた�
 
 キットの販売ページはこちら
 
-- <font color=red>あとで直す</font>
+- [https://geek-rabb1t.booth.pm/items/6697559](https://geek-rabb1t.booth.pm/items/6697559)
 
 ## 対応スイッチ
 

@@ -85,7 +85,7 @@ Vial上でカスタマイズできます。
 Futabaのファームウェアのソースは以下のリポジトリにあります。  
 ライセンスの範囲であれば、自由に改変してかまいません。
 
-[https://github.com/geek-rabb1t/vial-qmk/tree/futaba/keyboards/futaba](https://github.com/geek-rabb1t/vial-qmk/tree/futaba/keyboards/futaba)
+[https://github.com/geek-rabb1t/vial-qmk/tree/gr_master/keyboards/geek_rabb1t/futaba](https://github.com/geek-rabb1t/vial-qmk/tree/gr_master/keyboards/geek_rabb1t/futaba)
 
 
 ### ファームウェアの書き込み方法

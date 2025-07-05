@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>GR-Trackpad65 実験キット ビルドガイド | うさきーぼー堂の裏側</title>
+<meta name="generator" content="Jekyll v4.3.4">
+<meta property="og:title" content="GR-Trackpad65 実験キット ビルドガイド">
+<meta name="author" content="geek-rabb1t">
+<meta property="og:locale" content="ja">
+<meta name="description" content="準備">
+<meta property="og:description" content="準備">
+<link rel="canonical" href="https://geek-rabb1t.github.io/grt65-expkit/build_guide">
+<meta property="og:url" content="https://geek-rabb1t.github.io/grt65-expkit/build_guide">
+<meta property="og:site_name" content="うさきーぼー堂の裏側">
+<meta property="og:image" content="https://geek-rabb1t.github.io/assets/images/grt65-expkit/DSCF3742.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-03-01T00:00:01+00:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="https://geek-rabb1t.github.io/assets/images/grt65-expkit/DSCF3742.jpg">
+<meta property="twitter:title" content="GR-Trackpad65 実験キット ビルドガイド">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"geek-rabb1t"},"dateModified":"2025-03-01T00:00:01+00:00","datePublished":"2025-03-01T00:00:01+00:00","description":"準備","headline":"GR-Trackpad65 実験キット ビルドガイド","image":"https://geek-rabb1t.github.io/assets/images/grt65-expkit/DSCF3742.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://geek-rabb1t.github.io/grt65-expkit/build_guide"},"url":"https://geek-rabb1t.github.io/grt65-expkit/build_guide"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="/assets/images/logo.svg">
+  <link rel="canonical" href="https://geek-rabb1t.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/linkpreview.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://geek-rabb1t.github.io/feed.xml" title="うさきーぼー堂の裏側">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji):not(.ogp-image)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="うさきーぼー堂の裏側" src="/assets/images/logo.svg" onerror="this.style.display='none'">
+  うさきーぼー堂の裏側
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/">HOME</a><a class="page-link" href="/works/index.html">WORKS</a><a class="page-link" href="/build_guide/index.html">BUILD GUIDE</a><a class="page-link" href="/posts/index.html">POSTS</a><a class="page-link" href="/about">ABOUT</a>
+
+
+
+
+
+
+
+
+
+<div class="page-link" style="display: inline;">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<div class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ja',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+</div>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) 120px, rgba(0, 0, 0, 0.2) 240px),url(/assets/images/grt65-expkit/DSCF3742.jpg)"></div>
+        <img class="img-placeholder" src="/assets/images/grt65-expkit/DSCF3742.jpg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner">
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">GR-Trackpad65 実験キット ビルドガイド</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2025-03-01T00:00:01+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-03-01
+    </time>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 28 mins</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#GR-Trackpad65%20%E5%AE%9F%E9%A8%93%E3%82%AD%E3%83%83%E3%83%88">#GR-Trackpad65 実験キット</a><a class="post-tag" href="/tags.html#Build%20Guide">#Build Guide</a>
+</div></header>
+</div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h2 id="準備">準備</h2>
+
+<p>組み立て前に同梱物や追加で必要な部品、必要な工具を確認してください。</p>
+
+<h3 id="内容物の確認">内容物の確認</h3>
+
+<p>全ての写真はクリックして拡大可能できます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>分類</th>
+      <th>部品</th>
+      <th style="text-align: right">同梱数</th>
+      <th>写真</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>プレート</td>
+      <td>トッププレート</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3665.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      <td>PCB</td>
+      <td>メインPCB</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3663.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      <td rowspan="4">電子部品
+<br><br><br>
+</td>
+      <td>トラックパッドモジュール</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3294_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>マイコンボード (型番: RP2040-Zero)</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3295_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>フラットケーブル (0.5mmピッチ6ピン) \</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3330.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>ピンヘッダ (2.54mmピッチ40ピン  )</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3346.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      <td rowspan="6">部品
+<br><br><br><br><br>
+</td>
+      <td>トラックパッドカバー (マット黒アクリル)</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3320_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>キャップボルト - M2 長さ10mm</td>
+      <td style="text-align: right">4</td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3735_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>低頭小ねじ  - M2 長さ3.5mm</td>
+      <td style="text-align: right">4</td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3735_2.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>両メネジスペーサー - M2 長さ6mm</td>
+      <td style="text-align: right">4</td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3734_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>中空スペーサー  - M2 長さ3.5mm</td>
+      <td style="text-align: right">4</td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3734_2.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>ゴム足</td>
+      <td style="text-align: right">4</td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3733.jpg" width="100px"></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>注意: 付属のフラットケーブルは、写真のものより短い場合があります。</p>
+
+<h3 id="自分で用意するもの">自分で用意するもの</h3>
+
+<h4 id="ロープロファイルスイッチを使う場合">ロープロファイルスイッチを使う場合</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>部品</th>
+      <th>必要数</th>
+      <th>補足</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kailh ChocV1もしくは、Kailh ChocV2スイッチ</td>
+      <td>3</td>
+      <td>ChocV2互換のLofree Ghost等、 Kailh x Lofree Low-profileスイッチも対応</td>
+    </tr>
+    <tr>
+      <td>Low Profile対応1Uサイズキーキャップ</td>
+      <td>3</td>
+      <td>ChocV1とChocV2で軸の形が違うので間違えて買わないよう注意</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cherry-mxまたはmx互換スイッチを使う場合">Cherry MXまたは、MX互換スイッチを使う場合</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>部品</th>
+      <th>必要数</th>
+      <th>補足</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cherry MXまたは、MX互換スイッチ</td>
+      <td>3</td>
+      <td>ChocV2互換のLofree Ghost等、 Kailh x Lofree Low-profileスイッチも対応</td>
+    </tr>
+    <tr>
+      <td>Cherry MX対応1Uサイズキーキャップ</td>
+      <td>3</td>
+      <td>ChocV1とChocV2で軸の形が違うので間違えて買わないよう注意</td>
+    </tr>
+    <tr>
+      <td>中空スペーサー  - M2
+<br>
+</td>
+      <td>4
+<br>
+</td>
+      <td>スイッチ、キーキャップの組み合わせに合う長さを調達してください
+<br>
+スペーサーの長さによっては、キャップボルトも必要になります。</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h2 id="組み立てに必要な工具や道具">組み立てに必要な工具や道具</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>道具</th>
+      <th>用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>はんだごて</td>
+      <td>部品のはんだ付けに使用</td>
+    </tr>
+    <tr>
+      <td>はんだ</td>
+      <td>部品のはんだ付けに使用</td>
+    </tr>
+    <tr>
+      <td>ニッパー</td>
+      <td>はみ出したピンヘッダの切り落としに使用</td>
+    </tr>
+    <tr>
+      <td>No.0(PH0)サイズのプラスドライバー</td>
+      <td>ケースのねじ止めに使用</td>
+    </tr>
+    <tr>
+      <td>H1.5 サイズの6角ドライバー</td>
+      <td>ケースのねじ止めに使用（なくても何とかなります）</td>
+    </tr>
+    <tr>
+      <td>逆作用ピンセット</td>
+      <td>はんだ付け中の部品を固定するのに使用</td>
+    </tr>
+    <tr>
+      <td>両面テープ
+<br><br>
+</td>
+      <td>トラックパッドの固定に使用
+<br>
+クッションのない薄い両面テープを使用してください。
+<br>
+0.16mm厚 の、 <code class="language-plaintext highlighter-rouge">ニトムズ はがせる 両面テープ 強力接着用</code> を推奨</td>
+    </tr>
+    
+    
+    <tr>
+      <td>やすり</td>
+      <td>切断面のバリ取りに使用</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="組み立て手順">組み立て手順</h2>
+
+<p>まず、PCBの表裏について説明します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>面</th>
+      <th>実装前</th>
+      <th>実装後</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>表
+<br>
+</td>
+      <td>
+<img src="/assets/images/grt65-expkit/DSCF3663.jpg" width="200px">
+<br>
+</td>
+      <td>
+<img src="/assets/images/grt65-expkit/DSCF3737_1.jpg" width="200px">
+<br>
+</td>
+      <td>Front sideと印刷されています。こちらははんだ付けを行う面です。
+<br>
+あらかじめ一部の部品が実装済みです。</td>
+    </tr>
+    
+    <tr>
+      <td>裏</td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3664.jpg" width="200px"></td>
+      <td><img src="/assets/images/grt65-expkit/DSCF3736_1.jpg" width="200px"></td>
+      <td>Back sideと印刷されています。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="足パーツを折る">足パーツを折る</h3>
+
+<p>最初に、足となるパーツを手で折ります。<br>
+足パーツは画像の赤枠の部分です。</p>
+
+<p><img src="/assets/images/grt65-expkit/leg.jpg" alt="足パーツ"></p>
+
+<p>少し力をかけると簡単に折ることができます。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3667.jpg" alt="足を折る"></p>
+
+<h3 id="マイコンボードrp2040-zeroの取り付け">マイコンボード(RP2040-Zero)の取り付け</h3>
+
+<h4 id="ファームウェアの書き込み">ファームウェアの書き込み</h4>
+
+<p>はんだ付け前にマイコンにファームウェアを書き込みます。</p>
+
+<p>マイコンにUSBケーブルを接続し、PCと接続します。<br>
+ストレージデバイスとして認識するので、リンク先からダウンロードしたファームウェアをコピーします。</p>
+
+<p>ビルド済みファームウェアへのリンク:<br>
+<a href="https://github.com/geek-rabb1t/grt65-expkit/raw/refs/heads/master/firmware/geek_rabb1t_grt65_exp_kit_vial.uf2">https://github.com/geek-rabb1t/grt65-expkit/raw/refs/heads/master/firmware/geek_rabb1t_grt65_exp_kit_vial.uf2</a></p>
+
+<p>ストレージとして認識しない場合、RESETとBOOTボタンを同時に押してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_1.png" alt="ファームウェアの書き込み"></p>
+
+<h4 id="マイコンのはんだ付け手順">マイコンのはんだ付け手順</h4>
+
+<p>キット付属のピンヘッダをニッパーで切り分けます。
+切り分けた後のピンヘッダ</p>
+
+<ul>
+  <li>9本足： 2個</li>
+  <li>5本足： 1個</li>
+</ul>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3347.jpg" alt="切り取り後のピンヘッダ"></p>
+
+<p>PCBの表面にUSBコネクタを上にしたRP2040-Zeroを置きます。
+PCBの裏面からピンヘッダーの足の短い方を差し込みます。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3682.jpg" alt="マイコンの固定"></p>
+
+<p>別アングルから見るとこんな感じです。
+<img src="/assets/images/grt65-expkit/DSCF3678.jpg" alt="マイコンの固定"></p>
+
+<p>逆作用ピンセットでRP2040-Zeroを抑えながら、マイコンとピンヘッダをはんだ付けします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3687.jpg" alt="マイコンのはんだ付け"></p>
+
+<p>PCBの裏面にはみ出たピンヘッダをニッパーで切り取ります。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3691.jpg" alt="はみ出しを切り落とす"></p>
+
+<p>残りの足も同じようにはんだ付けし、不要なピンヘッダを切り取ります。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3700.jpg" alt="残りのはんだ付け"></p>
+
+<p>全てのピンヘッダを切り落としたら、PCBとピンヘッダもはんだ付けします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3702.jpg" alt="裏面のはんだ付け"></p>
+
+<h3 id="スイッチの取り付け">スイッチの取り付け</h3>
+
+<p>PCBの裏面からスイッチを差し込み、足をはんだ付けします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3739_1.jpg" alt="裏面のはんだ付け"></p>
+
+<h3 id="トラックパッドの取り付け">トラックパッドの取り付け</h3>
+
+<h4 id="トラックパッドの固定">トラックパッドの固定</h4>
+
+<p>トラックパッド裏側に両面テープを貼ります。<br>
+白線で囲った枠の外であればどこに貼り付けてもかまいません。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3422.jpg" alt="トラックパッドに両面テープを貼り付ける"></p>
+
+<p>トッププレートの Trackpad Here と書いてある場所にトラックパッドを載せて固定します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3707.jpg" alt="トッププレートに固定"></p>
+
+<h4 id="トラックパッドカバーの固定">トラックパッドカバーの固定</h4>
+
+<p>トラックパッドカバーの保護紙をはがします。<br>
+表裏で触り心地が異なります。触り心地の良い面が表側になるようにしてください。</p>
+
+<p>裏側になる面一面に両面テープを貼り付けます。両面テープは重ねず、全面に貼るようにしてください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3427.jpg" alt="トラックパッドカバーへの両面テープの貼り付け"></p>
+
+<p>はみ出た部分をカッターなどで切り落とします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3430.jpg" alt="両面テープの切り落とし"></p>
+
+<p>両面テープをはがし、トラックパッドに貼り付けます。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3709.jpg" alt="トラックパッドカバーの貼り付け"></p>
+
+<h4 id="フラットケーブルの接続">フラットケーブルの接続</h4>
+
+<p>トラックパッド裏面（部品が実装済みの面）のFFCコネクタの黒い部分をトラックパッドと平行に引っ張り、ロックを解除します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3711.jpg" alt="FFCコネクタのロック解除"></p>
+
+<p>フラットケーブルの青い面を上にして、フラットケーブルをまっすぐ差し込みます。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3712.jpg" alt="フラットケーブルを差し込む"></p>
+
+<p>FFCコネクタの黒い部分を押し込み、ロックします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3713.jpg" alt="コネクタのロック"></p>
+
+<p>同じようにして、PCB側にもフラットケーブルを接続します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3715.jpg" alt="PCB側のケーブル接続"></p>
+
+<h3 id="ねじ止め">ねじ止め</h3>
+
+<p>キャップボルトと両メネジスペーサーを使って、トッププレート、中空スペーサー、PCBを固定します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3721.jpg" alt="ネジの順番"></p>
+
+<p>足パーツはM2ネジで固定します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3722.jpg" alt="足パーツの固定"></p>
+
+<p>はみ出したフラットケーブルはトッププレートとPCBの隙間に入れ邪魔にならないようにします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3723.jpg" alt="フラットケーブルの処理"></p>
+
+<p>足パーツにゴム足を付けたら完成です。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3725.jpg" alt="ゴム足"></p>
+
+<h2 id="動作確認">動作確認</h2>
+
+<h3 id="vial-の起動">Vial の起動</h3>
+
+<p>Chrome等WebHIDに対応したブラウザの場合、 以下のURLにアクセスして ブラウザ版のアプリを起動します。</p>
+
+<p><a href="https://vial.rocks/">https://vial.rocks/</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">Start Vial</code> ボタンが表示される場合、そのままボタンを押して、 Vialを開始します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_2.png" alt="Start Vial"></p>
+
+<p>このようなダイアログが表示されたら、<code class="language-plaintext highlighter-rouge">GRT65-expkit</code> を選択します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_3.png" alt="ペアリング"></p>
+
+<p>ボタンが表示されない場合はWebHID非対応ブラウザなので、デスクトップアプリを使用してください。<br>
+非対応ブラウザの場合は以下のURLから <code class="language-plaintext highlighter-rouge">Download Vial</code> を選んで、デスクトップアプリをインストールできます。</p>
+
+<p><a href="https://get.vial.today/">https://get.vial.today/</a></p>
+
+<p>ここでは利用者の多そうなブラウザ版で説明します。
+デスクトップ版も同じ操作です。</p>
+
+<h3 id="キー入力の確認">キー入力の確認</h3>
+
+<p>Matrix testerタブを開き、ロックを解除します。
+Vialのロック解除は3つのスイッチを長押しします。</p>
+
+<h4 id="各キーの動作確認">各キーの動作確認</h4>
+
+<p>全部のキーを入力し、正しく入力できるか確認してください。<br>
+下のスクリーンショットの状態になったらOKです。（ロック解除できている時点で入力できています。）</p>
+
+<p>トラックパッドのスワイプジェスチャについてはマトリックステスターではテストできません。</p>
+
+<p><img src="/assets/images/grt65-expkit/screenshot_1.png" alt="キー入力確認"></p>
+
+<p>上手く動かない場合、ページ下部の<a href="#%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">トラブルシューティング</a> を参考に対応してください。<br>
+トラックパッドは指の移動にあわせてカーソルが動けばOKです。</p>
+
+<h2 id="組み立てが終わったら">組み立てが終わったら</h2>
+
+<p>出来上がった作品は <code class="language-plaintext highlighter-rouge">#grt65_expkit</code> タグをつけてSNSに投稿してください。<br>
+余計な部分を切り取れば、ブレッドボードで実験できるように設計しているので色々遊んでみてくださいね～</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3732_2.jpg" alt="完成写真"></p>
+
+<hr>
+<h2 id="カスタマイズ">カスタマイズ</h2>
+
+<h3 id="デフォルトのキーマップ">デフォルトのキーマップ</h3>
+
+<p>デフォルトのキーマップは以下の通りです。<br>
+トラックパッド下の物理スイッチは枠内のエリアで設定可能です。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap.jpg" alt="デフォルトキーマップ"></p>
+
+<h3 id="トラックパッドのカスタマイズ">トラックパッドのカスタマイズ</h3>
+
+<p>Vial上でカスタマイズできます。<br>
+一部の項目はレイヤー0(デフォルトレイヤー) でのみ設定可能です。</p>
+
+<p>タップやスワイプジェスチャの挙動に加え、カーソル速度やスクロール速度などを設定可能です。</p>
+
+<h3 id="カーソルに関する設定">カーソルに関する設定</h3>
+
+<p>レイヤー0(デフォルトレイヤー) で設定します。<br>
+他のレイヤーに設定しても機能しないので注意してください。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap-cursor.jpg" alt="カーソル設定"></p>
+
+<p>項目ごとに決まったキーコードのみ指定可能です。
+無効なキーコードが指定された場合は初期値を使います。</p>
+
+<p>この項目はキーボードを再接続するまで反映されません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>指定可能な値</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>カーソル速度</td>
+      <td>Cursor Speed</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">Val 5</code></td>
+      <td>カーソルの移動速度を設定します。数値が大きいほど速くなります。</td>
+    </tr>
+    <tr>
+      <td>カーソルの加速</td>
+      <td>Cursor Acceleration</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>カーソルの加速有無を設定します。</td>
+    </tr>
+    <tr>
+      <td>慣性カーソル</td>
+      <td>Inertia Cursor</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>カーソル移動中に指を離したときにそのままカーソルを移動するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>カーソル補正
+<br>
+</td>
+      <td>Cursor Correction
+<br>
+</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code>
+<br>
+</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">Val 2</code>
+<br>
+</td>
+      <td>カーソル補正の強さを設定します。
+<br>
+数値を大きくすると補正が強くなりますが、遅延が大きくなります。</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="スクロールに関する設定">スクロールに関する設定</h3>
+
+<p>レイヤー0(デフォルトレイヤー) で設定します。
+他のレイヤーに設定しても機能しないので注意してください。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap-scroll.jpg" alt="スクロール設定"></p>
+
+<p>項目ごとに決まったキーコードのみ指定可能です。
+無効なキーコードが指定された場合は初期値を使います。</p>
+
+<p>この項目はキーボードを再接続するまで反映されません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>指定可能な値</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>スクロール速度</td>
+      <td>Scroll Speed</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">Val 4</code></td>
+      <td>スクロール速度を設定します。数値が大きいほど速くなります。</td>
+    </tr>
+    <tr>
+      <td>垂直スクロールの反転</td>
+      <td>Reverse Vertical Scroll</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>垂直方向のスクロールを反転するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>水平スクロールの反転</td>
+      <td>Reverse Horizontal Scroll</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>水平方向のスクロールを反転するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>慣性スクロール</td>
+      <td>Inertia Scroll</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>スクロール中に指を離したときにそのままスクロールを継続するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>スクロールのみ</td>
+      <td>Scroll Only</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>ONにすると、カーソル移動が無効になりスクロールのみになります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="トラックパッドの向きに関する設定">トラックパッドの向きに関する設定</h3>
+
+<p>レイヤー0(デフォルトレイヤー) で設定します。
+他のレイヤーに設定しても機能しないので注意してください。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap-rotate.jpg" alt="向きの設定"></p>
+
+<p>項目ごとに決まったキーコードのみ指定可能です。
+無効なキーコードが指定された場合は初期値を使います。</p>
+
+<p>この項目はキーボードを再接続するまで反映されません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>指定可能な値</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>トラックパッドの回転</td>
+      <td>Rotate</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">R0</code> - <code class="language-plaintext highlighter-rouge">R270</code>
+</td>
+      <td><code class="language-plaintext highlighter-rouge">R0</code></td>
+      <td>トラックパッドの向きを反時計回りで設定します。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="タップ">タップ</h3>
+
+<p>レイヤーごとに個別の設定が可能です。<br>
+1本指から4本指までのタップ挙動を設定できます。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap-tap.jpg" alt="タップ設定"></p>
+
+<p>デフォルトは以下の設定になっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1本指タップ</td>
+      <td>One Finger Tap</td>
+      <td>Mouse1</td>
+      <td>左クリック</td>
+    </tr>
+    <tr>
+      <td>2本指タップ</td>
+      <td>Two Finger Tap</td>
+      <td>Mouse2</td>
+      <td>右クリック</td>
+    </tr>
+    <tr>
+      <td>3本指タップ</td>
+      <td>Three Finger Tap</td>
+      <td>Mouse3</td>
+      <td>ホイールクリック</td>
+    </tr>
+    <tr>
+      <td>4本指タップ</td>
+      <td>Four Finger Tap</td>
+      <td>Win + S</td>
+      <td>検索機能へのショートカット</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="スワイプジェスチャ">スワイプジェスチャ</h3>
+
+<p>レイヤーごとに個別の設定が可能です。<br>
+3本指、4本指のスワイプジェスチャの挙動を設定できます。</p>
+
+<h4 id="3本指">3本指</h4>
+
+<p><img src="/assets/images/grt65-expkit/keymap-3finger.jpg" alt="layer-0-3finger"></p>
+
+<p>デフォルトでは以下のキーバインドになっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>スワイプ方向</th>
+      <th>イメージ</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上</td>
+      <td><img src="/assets/images/futaba/customize/3finger-up.jpg" width="200px"></td>
+      <td>タスクビュー(Win + Tab)</td>
+    </tr>
+    <tr>
+      <td>下</td>
+      <td><img src="/assets/images/futaba/customize/3finger-down.jpg" width="200px"></td>
+      <td>デスクトップ表示(Win + D)</td>
+    </tr>
+    <tr>
+      <td>左</td>
+      <td><img src="/assets/images/futaba/customize/3finger-left.jpg" width="200px"></td>
+      <td>ブラウザの戻る(マウスのボタン4)</td>
+    </tr>
+    <tr>
+      <td>右</td>
+      <td><img src="/assets/images/futaba/customize/3finger-right.jpg" width="200px"></td>
+      <td>ブラウザの進む(マウスのボタン5)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="4本指">4本指</h4>
+
+<p><img src="/assets/images/grt65-expkit/keymap-4finger.jpg" alt="layer-0-4finger"></p>
+
+<p>デフォルトでは以下のキーバインドになっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>スワイプ方向</th>
+      <th>イメージ</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上</td>
+      <td><img src="/assets/images/futaba/customize/4finger-up.jpg" width="200px"></td>
+      <td>タスクビュー(Win + Tab)</td>
+    </tr>
+    <tr>
+      <td>下</td>
+      <td><img src="/assets/images/futaba/customize/4finger-down.jpg" width="200px"></td>
+      <td>デスクトップ表示(Win + D)</td>
+    </tr>
+    <tr>
+      <td>左</td>
+      <td><img src="/assets/images/futaba/customize/4finger-left.jpg" width="200px"></td>
+      <td>左のデスクトップへ移動(Win + Ctrl + ←)</td>
+    </tr>
+    <tr>
+      <td>右</td>
+      <td><img src="/assets/images/futaba/customize/4finger-right.jpg" width="200px"></td>
+      <td>右のデスクトップへ移動(Win + Ctrl + →)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="カスタムキーコード">カスタムキーコード</h3>
+
+<p>Userタブにカスタムキーコードを用意しています。<br>
+実際に機能するものは一部で、大半はトラックパッドの設定用です。</p>
+
+<p><img src="/assets/images/futaba/customize/custom-keycode.jpg" alt="layer-1"></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>キー</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CHi</td>
+      <td>このキーを押している間、カーソルの移動速度が2倍になります。</td>
+    </tr>
+    <tr>
+      <td>CLw</td>
+      <td>このキーを押している間、カーソルの移動速度が半分になります。</td>
+    </tr>
+    <tr>
+      <td>Scroll Mode
+<br>
+</td>
+      <td>このキーを押している間はカーソル移動の代わりにスクロールします。
+<br>
+<code class="language-plaintext highlighter-rouge">Scroll Only</code> が <code class="language-plaintext highlighter-rouge">ON</code>　の場合は、スクロールの代わりにカーソル移動します。</td>
+    </tr>
+    
+    <tr>
+      <td>
+<code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code>
+</td>
+      <td>トラックパッドの数値項目の設定に使用します。設定以外には使用できません。</td>
+    </tr>
+    <tr>
+      <td>
+<code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code>
+</td>
+      <td>トラックパッドの機能の有効、無効を設定します。設定以外には使用できません。</td>
+    </tr>
+    <tr>
+      <td>
+<code class="language-plaintext highlighter-rouge">R0</code> - <code class="language-plaintext highlighter-rouge">R270</code>
+</td>
+      <td>トラックパッドの向きの設定に使用します。設定以外には使用できません。</td>
+    </tr>
+    <tr>
+      <td>それ以外</td>
+      <td>設定項目のラベル表示用です。設定以外に使用できません。</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2 id="トラブルシューティング">トラブルシューティング</h2>
+
+<p>上手く動かない場合は以下のトラブルシューティングを参考に対応してください。<br>
+それでも解決しない場合は、作者まで連絡してください。解決できるようサポートします。</p>
+
+<h3 id="認識しないキーがある場合">認識しないキーがある場合</h3>
+
+<p>キースイッチもしくは、マイコンのはんだ付けに失敗している可能性が高いです。<br>
+はんだ付けを確認してください。</p>
+
+<h3 id="トラックパッドが反応しない場合">トラックパッドが反応しない場合</h3>
+
+<p>トラックパッド側とPCB側のフラットケーブルコネクタを確認し、ケーブルがまっすぐ奥まで差し込めているか確認してください。
+ケーブルに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<p>動作確認時に、ケースに載せていない場合、トラックパッド下の素材の影響を受ける場合があります。
+反応しない場合は手順通り、ケースに載せてから再度確認してください。</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/futaba" title="Futaba">Futaba</a><a class="next" href="/grt65-expkit" title="GR-Trackpad65 実験キット">GR-Trackpad65 実験キット</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li class="">
+          <a class="post-link" href="/keyket2025-look-back" title="キーケット2025　振り返り">
+            キーケット2025　振り返り<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/grt65-expkit" title="GR-Trackpad65 実験キット">
+            GR-Trackpad65 実験キット<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/futaba/customize_guide" title="Futabaカスタマイズガイド">
+            Futabaカスタマイズガイド<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/subel-blade" title="Subel Blade(スベルブレード)">
+            Subel Blade(スベルブレード)<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Copyright © 2024-2025 geek-rabb1t</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a>
+</div>
+      <div><a title="translated by Google" href="http://translate.google.com"><img src="/assets/images/greyscale-short.svg"></a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

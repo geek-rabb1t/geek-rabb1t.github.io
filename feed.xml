@@ -1,0 +1,2275 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://geek-rabb1t.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://geek-rabb1t.github.io/" rel="alternate" type="text/html" hreflang="ja" /><updated>2025-07-05T14:08:14+00:00</updated><id>https://geek-rabb1t.github.io/feed.xml</id><title type="html">うさきーぼー堂の裏側</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>geek-rabb1t</name></author><entry><title type="html">Subel Blade(スベルブレード)</title><link href="https://geek-rabb1t.github.io/subel-blade" rel="alternate" type="text/html" title="Subel Blade(スベルブレード)" /><published>2025-05-05T00:00:00+00:00</published><updated>2025-05-05T00:00:00+00:00</updated><id>https://geek-rabb1t.github.io/subel-blade</id><content type="html" xml:base="https://geek-rabb1t.github.io/subel-blade"><![CDATA[<p><img src="/assets/images/subel-blade/subel-blade.png" alt="banner" /></p>
+
+<h2 id="これはなに">これはなに？</h2>
+
+<p>Kensington社の <a href="https://www.kensington.com/ja-jp/p/%E8%A3%BD%E5%93%81/%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB/%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9C%E3%83%BC%E3%83%AB/slimblade-pro%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9C%E3%83%BC%E3%83%AB3/">SlimBlade</a> というトラックボールのボールの滑りを改善する Mod です。</p>
+
+<p>本体の改造は必要なく、SlimBladeの下に敷くだけで使用できます。</p>
+
+<h2 id="必要な部品">必要な部品</h2>
+
+<ul>
+  <li>Subel Blade x1</li>
+  <li><a href="https://amzn.asia/d/0poyzrV">NTN 単式スラスト玉軸受 51102</a> の保持器(ボールがついている)部分 x1</li>
+</ul>
+
+<p><img src="/assets/images/subel-blade/DSCF4023_2.jpg" alt="部品一覧" /></p>
+
+<h2 id="使い方">使い方</h2>
+
+<ol>
+  <li>ご自宅の3Dプリンタで <a href="https://github.com/geek-rabb1t/subel-blade/blob/master/stl/subel-blade.stl">こちらのSTL</a> を印刷します。
+    <ul>
+      <li>光造形方式の3Dプリンタで確認しています。</li>
+      <li>FDM方式の場合、調整が必要になるかもしれません。</li>
+    </ul>
+  </li>
+  <li>スベルブレードの上にスラストベアリングの保持器部分のみを置きます。<br />
+<img src="/assets/images/subel-blade/DSCF4024_2.jpg" alt="重ねる" /></li>
+  <li>スリムブレードのボールの下に敷きます。<br />
+<img src="/assets/images/subel-blade/DSCF4015_2.jpg" alt="下に敷く" /></li>
+</ol>
+
+<h3 id="注意">注意</h3>
+
+<ul>
+  <li>ベアリング分ボールが少し浮きます。操作には影響ありませんが、気になる場合はスリムブレードにゴム足などを付けて調整してください。</li>
+  <li>何か問題があっても対応する予定はありません。自己責任の上お試しください。</li>
+  <li>今後の改善も販売予定もありません。</li>
+</ul>
+
+<h2 id="設計データ">設計データ</h2>
+
+<ul>
+  <li><a href="https://github.com/geek-rabb1t/subel-blade">Github リポジトリはこちら</a></li>
+</ul>]]></content><author><name>geek-rabb1t</name></author><category term="works" /><category term="Subel Blade" /><category term="works" /><summary type="html"><![CDATA[]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://geek-rabb1t.github.io/assets/images/subel-blade/banner.png" /><media:content medium="image" url="https://geek-rabb1t.github.io/assets/images/subel-blade/banner.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">キーケット2025　振り返り</title><link href="https://geek-rabb1t.github.io/keyket2025-look-back" rel="alternate" type="text/html" title="キーケット2025　振り返り" /><published>2025-03-28T00:00:00+00:00</published><updated>2025-03-28T00:00:00+00:00</updated><id>https://geek-rabb1t.github.io/keyket2025-look-back</id><content type="html" xml:base="https://geek-rabb1t.github.io/keyket2025-look-back"><![CDATA[<p>2025/03/22 に 東京都産業貿易センター 台東館 4階 で開催されたキーボードマーケット東京 2025 に出展しました。
+とても楽しいイベントでしたが、いろいろ反省点もあったので、備忘録も兼ねて振り返りをしていきます。</p>
+
+<p>イベントの詳細情報はこちら。</p>
+
+<div class="jekyll-linkpreview-wrapper">
+    <a href="https://keyket.jp/tokyo-2025/" class="jekyll-linkpreview-link" target="_blank">
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+              <img class="ogp-image" src="https://keyket.jp/tokyo-2025/ogp_kv.jpg" />
+          </div>
+        <div class="jekyll-linkpreview-body">
+          <strong class="jekyll-linkpreview-title">
+            キーボードマーケット トーキョー 2025
+          </strong>
+          <div class="jekyll-linkpreview-description">キーケットは、自作キーボードを中心とした入力デバイスの即売会です。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        keyket.jp
+      </div>
+    </div>
+    </a>
+  </div>
+
+<h2 id="ブース番号">ブース番号</h2>
+
+<p>入口入ってすぐの C-1ブースでした。</p>
+
+<p>後日、主催のびあっこさんも出演するほぼ週刊キーボードニュースで話さされていましたが、<br />
+混雑が予想されるブースはお誕生日席か、壁際に配置したとのこと。</p>
+
+<p>実際、ブースの場所はすごく良く、終了近くまでお客さんがほとんど途切れなかった。</p>
+
+<p><img src="/assets/images/keyket2025/area.png" alt="area" /></p>
+
+<h2 id="反省点">反省点</h2>
+
+<h3 id="商品の独自性は重要">商品の独自性は重要。</h3>
+
+<p>メインに出品した Futaba は、トラックパッド一体型の自作キーボードという、あまり他にない作品というのもあり、たくさんの人に触ってもらえた。
+事前の反響もあったので、指名買いの人もちらほらいた。
+すでに組み立てツイートもいくつか出ており、作った甲斐がある。</p>
+
+<div class="jekyll-linkpreview-wrapper">
+    <a href="https://geek-rabb1t.github.io/futaba" class="jekyll-linkpreview-link" target="_blank">
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+              <img class="ogp-image" src="https://geek-rabb1t.github.io/assets/images/banners/home.jpg" />
+          </div>
+        <div class="jekyll-linkpreview-body">
+          <strong class="jekyll-linkpreview-title">
+            Futaba
+          </strong>
+          <div class="jekyll-linkpreview-description">持ち運び可能な Timothy をコンセプトに設計した、トラックパッド付きの一体型キーボードです。 Timothy最大の特徴である、一段下がった親指クラスタという特徴を受け継ぎつつも、ロープロファイルキースイッチの採用や、数字行を排除した40%デザインなど、様々な点で進化しています。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        geek-rabb1t.github.io
+      </div>
+    </div>
+    </a>
+  </div>
+
+<h3 id="試し打ちの説明兼接客となってしまった">試し打ちの説明兼、接客となってしまった</h3>
+
+<p>そんなFutaba だけど、トラックパッドの操作説明くらいは、印刷しておくべきだった。
+操作説明がないこともあり、試打の説明イコール接客みたいな感じになってしまい、多くの人を待たせてしまった。
+それもあって、諦めて列から離れる人も何人もいた。</p>
+
+<p>説明時はPCを上から覗き込んで話していたが、これがものすごくしんどい。その点でも操作説明が必要。</p>
+
+<p>試し打ちは黙々と流れるようにして、接客は別というふうにするといいのかなぁ。<br />
+でもそれはそれで、試し打ちのお客さんが質問しにくいよね？どうするのがいいんだろ？ここは悩みどころ。</p>
+
+<h3 id="テーブルクロスが滑る">テーブルクロスが滑る</h3>
+
+<p>サークル出展のイベントということで、いつものテーブルクロスを持っていったけど、
+テーブルクロスが滑ってしまい、Futabaのホイールクリックしずらかった。
+ここはシミュレーション不足。事前に自宅で並べて確認しておくべきだった。</p>
+
+<h3 id="ノートpcの電源">ノートPCの電源</h3>
+
+<p>試し打ち用にノートPCを持っていくけど電源に不安があるっていう話を前日のDaihukuさんの配信で話したら、Alcoさんがポータブル電源を貸してくれた。
+あなたが神か。おかげで安心して説明することができた。</p>
+
+<p>ノートPCを持ち込む場合は電源を借りるか、ポータブル電源を用意するかして、電源の不安をなくしたほうがいいね。</p>
+
+<h3 id="トラックパッド実験キットの数が足りない">トラックパッド実験キットの数が足りない</h3>
+
+<p>直前の思いつきで作った実験キットの受けが思いのほかよかった。
+でも準備できる数が少なすぎたのは痛い。おかげで1時間もしないうちに売り切れてしまった。</p>
+
+<p>こだわりマシマシで作り込んだものもいいけど、お手軽なキットも用意するといいね。
+特にお手軽価格で遊べそうなモジュールは受けがいいのかも。</p>
+
+<div class="jekyll-linkpreview-wrapper">
+    <a href="https://geek-rabb1t.github.io/grt65-expkit" class="jekyll-linkpreview-link" target="_blank">
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+              <img class="ogp-image" src="https://geek-rabb1t.github.io/assets/images/grt65-expkit/DSCF3531_1.jpg" />
+          </div>
+        <div class="jekyll-linkpreview-body">
+          <strong class="jekyll-linkpreview-title">
+            GR-Trackpad65 実験キット
+          </strong>
+          <div class="jekyll-linkpreview-description">Futabaに採用したトラックパッド単体を簡単にお試しするためのキットです。 4本指までのマルチタッチ対応のトラックパッド + 3キー のマクロパッドとして機能します。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        geek-rabb1t.github.io
+      </div>
+    </div>
+    </a>
+  </div>
+
+<h3 id="撮影okなのにみんなから聞かれた">撮影OKなのにみんなから聞かれた</h3>
+
+<p>プレートに撮影okと書いて立ててたが、ほとんど全員に聞かれた。
+プレートで斜めに配置してても視界に入らないようなので直置きがよかったかも。</p>
+
+<p>そもそも、テーブルクロスと紙類のコントラストがなさすぎたか？
+上から見下ろされる前提の配置がいいのかな。</p>
+
+<h3 id="シーリングスタンプキーキャップが目に入らない">シーリングスタンプキーキャップが目に入らない</h3>
+
+<p>共同出展のHarukaが用意した羊毛フェルトキーキャップは次から次への売れていくのに、前回よく出たシーリングスタンプ反応がイマイチだった。
+置き方が悪いのか、気付いてもらえない感じだった。パッケージに入れるのではなく、もっと目立つ展示を考えるべきだったか？</p>
+
+<h3 id="のぼりはgood">のぼりはGood!</h3>
+
+<p>直前の思いつきでA3ののぼりを作ったけど、少し離れたところからでも視認できて良かった。
+自宅に転がってたマイクアームと、急遽調達したレフ版用のクリップを組み合わせたもの。
+もう少し高さがあると良かったが、十分わかりやすくできたと思う。</p>
+
+<h3 id="キャッシュレス決済多い">キャッシュレス決済多い</h3>
+
+<p>今回はキャッシュレス決済の人がものすごく多かった。
+事前に決済手段の案内をしていたこともあるかもしれないが、やはり、一つ一つが高額だからか？</p>
+
+<p>決済端末としてSQUAREを使っているが、共同出展のHarukaの商品と、自分の商品名をそれぞれ登録していたので、イベント終了後もそれぞれの売り上げが一目瞭然だった。ここは過去のイベントの反省点として今回から実施したがとても良かった。</p>
+
+<h2 id="さいごに">さいごに</h2>
+
+<p>いろいろ反省点はありましたが、とても楽しいイベントでした。<br />
+また来年も開催されるようなので、そこでも出展したいと思っています。</p>
+
+<p>そして、次回は操作説明を用意します。（一番の反省点）</p>
+
+<p>イベント運営スタッフの方、ブースに来てくれたたくさんのお客さん、まわりの出展者さん、協賛企業さん、皆さんに感謝です。
+また次のイベントでお会いしましょう。</p>]]></content><author><name>geek-rabb1t</name></author><category term="events" /><category term="Futaba" /><category term="GR-Trackpad65 実験キット" /><summary type="html"><![CDATA[2025/03/22 に 東京都産業貿易センター 台東館 4階 で開催されたキーボードマーケット東京 2025 に出展しました。 とても楽しいイベントでしたが、いろいろ反省点もあったので、備忘録も兼ねて振り返りをしていきます。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://geek-rabb1t.github.io/assets/images/keyket2025/PXL_20250322_004646377.jpg" /><media:content medium="image" url="https://geek-rabb1t.github.io/assets/images/keyket2025/PXL_20250322_004646377.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">キーケット2025　お品書き</title><link href="https://geek-rabb1t.github.io/keyket2025" rel="alternate" type="text/html" title="キーケット2025　お品書き" /><published>2025-03-08T00:00:00+00:00</published><updated>2025-03-08T00:00:00+00:00</updated><id>https://geek-rabb1t.github.io/keyket2025</id><content type="html" xml:base="https://geek-rabb1t.github.io/keyket2025"><![CDATA[<p>2025/03/22 に 東京都産業貿易センター 台東館 4階 で開催されるキーボードマーケット東京 2025 に出展します。<br />
+イベントの詳細情報はこちらからどうぞ。</p>
+
+<div class="jekyll-linkpreview-wrapper">
+    <a href="https://keyket.jp/tokyo-2025/" class="jekyll-linkpreview-link" target="_blank">
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+              <img class="ogp-image" src="https://keyket.jp/tokyo-2025/ogp_kv.jpg" />
+          </div>
+        <div class="jekyll-linkpreview-body">
+          <strong class="jekyll-linkpreview-title">
+            キーボードマーケット トーキョー 2025
+          </strong>
+          <div class="jekyll-linkpreview-description">キーケットは、自作キーボードを中心とした入力デバイスの即売会です。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        keyket.jp
+      </div>
+    </div>
+    </a>
+  </div>
+
+<h2 id="ブース番号">ブース番号</h2>
+
+<p>入口入ってすぐの、 C-1ブースです。</p>
+
+<p><img src="/assets/images/keyket2025/area.png" alt="area" /></p>
+
+<h2 id="お品書き">お品書き</h2>
+
+<h3 id="futaba---トラックパッド付きキーボード">Futaba - トラックパッド付きキーボード</h3>
+
+<p><img src="/assets/images/keyket2025/DSCF2928_2.jpg" alt="Futaba" /></p>
+
+<p>前作Timothy最大の特徴である、一段下がった親指クラスタという特徴を受け継ぎつつ、<br />
+マルチタッチトラックパッドや、大型ホイールを採用。</p>
+
+<p>組み立てには以下のパーツが必要です。</p>
+<ul>
+  <li>Kailh choc V1/V2スイッチ		x 49個</li>
+  <li>ロープロファイル対応キーキャップ	x 49個</li>
+</ul>
+
+<p><a href="/futaba">詳細はこちら</a></p>
+
+<div class="jekyll-linkpreview-wrapper">
+    <a href="https://geek-rabb1t.github.io/futaba" class="jekyll-linkpreview-link" target="_blank">
+    <div class="jekyll-linkpreview-wrapper-inner">
+      <div class="jekyll-linkpreview-content">
+        <div class="jekyll-linkpreview-image">
+              <img class="ogp-image" src="https://geek-rabb1t.github.io/assets/images/banners/home.jpg" />
+          </div>
+        <div class="jekyll-linkpreview-body">
+          <strong class="jekyll-linkpreview-title">
+            Futaba
+          </strong>
+          <div class="jekyll-linkpreview-description">持ち運び可能な Timothy をコンセプトに設計した、トラックパッド付きの一体型キーボードです。 Timothy最大の特徴である、一段下がった親指クラスタという特徴を受け継ぎつつも、ロープロファイルキースイッチの採用や、数字行を排除した40%デザインなど、様々な点で進化しています。</div>
+        </div>
+      </div>
+      <div class="jekyll-linkpreview-footer">
+        geek-rabb1t.github.io
+      </div>
+    </div>
+    </a>
+  </div>
+
+<h4 id="バリエーションと価格">バリエーションと価格</h4>
+<ul>
+  <li>ケースありキット		  ¥24,000</li>
+  <li>はんだ付け済みキット	¥32,000</li>
+  <li>ケースなしキット		  ¥11,000</li>
+  <li>ケースありキット(B品)	¥22,000</li>
+</ul>
+
+<h3 id="gr-trackpad65-実験キット">GR-Trackpad65 実験キット</h3>
+
+<p><img src="/assets/images/keyket2025/DSCF3531_1.jpg" alt="GR-Trackpad65 実験キット" /></p>
+
+<p>Futabaに採用したトラックパッドを簡単にお試しするためのキット。</p>
+
+<p>4本指までのマルチタッチに対応しています。PCからは通常のマウスとして扱われます。3本指、4本指のスワイプジェスチャには任意のショートカットを割り当て可能です。<br />
+組み立てにははんだ付けが必要です。</p>
+
+<p>また、以下のパーツが必要です。</p>
+<ul>
+  <li>Kailhロープロファイルスイッチ	x 3個</li>
+  <li>ロープロファイル対応キーキャップ	x 3個</li>
+</ul>
+
+<p><a href="/grt65-expkit">詳細はこちら</a></p>
+
+<h4 id="バリエーションと価格-1">バリエーションと価格</h4>
+
+<ul>
+  <li>キット				¥5,000</li>
+</ul>
+
+<h3 id="オリジナルキーキャップ---スタンド付き">オリジナルキーキャップ - スタンド付き</h3>
+
+<p><img src="/assets/images/keyket2025/DSCF2830_2.jpg" alt="Futaba" />
+<img src="/assets/images/keyket2025/DSCF2786_2.jpg" alt="Futaba" /></p>
+
+<p>シーリングスタンプを押したキーキャップと、共同出展者Haruka作の羊毛フェルトを使ったキーキャップの2種類。どちらも無限につながるキーキャップスタンド付き。</p>
+
+<h4 id="バリエーションと価格-2">バリエーションと価格</h4>
+
+<ul>
+  <li>シーリングスタンプキーキャップ	¥2,000</li>
+  <li>羊毛フェルトキーキャップ        ¥2,000</li>
+</ul>
+
+<h2 id="決済手段">決済手段</h2>
+
+<p>Squareの決済サービスを使用します。<br />
+以下の決済手段に対応しますが、一部非対応の場合もあります。</p>
+
+<ul>
+  <li>現金</li>
+  <li>各種クレジットカード
+    <ul>
+      <li>Visa/Mastercard/Amex</li>
+      <li>JCB/Diners Club/Discover</li>
+    </ul>
+  </li>
+  <li>iD</li>
+  <li>QUICPay</li>
+  <li>交通系IC
+    <ul>
+      <li>Suica, PASMO, Kitaca, toica, manaca, ICOCA, SUGOCA, nimoca, はやかけん</li>
+    </ul>
+  </li>
+</ul>
+
+<p>PayPayなどのQR決済には非対応です。</p>
+
+<p><a href="/assets/images/keyket2025/catalog.pdf">pdf版はこちら</a></p>]]></content><author><name>geek-rabb1t</name></author><category term="events" /><category term="Futaba" /><category term="GR-Trackpad65 実験キット" /><summary type="html"><![CDATA[2025/03/22 に 東京都産業貿易センター 台東館 4階 で開催されるキーボードマーケット東京 2025 に出展します。 イベントの詳細情報はこちらからどうぞ。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://geek-rabb1t.github.io/assets/images/keyket2025/main-visual.png" /><media:content medium="image" url="https://geek-rabb1t.github.io/assets/images/keyket2025/main-visual.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">GR-Trackpad65 実験キット</title><link href="https://geek-rabb1t.github.io/grt65-expkit" rel="alternate" type="text/html" title="GR-Trackpad65 実験キット" /><published>2025-03-01T00:00:02+00:00</published><updated>2025-03-01T00:00:02+00:00</updated><id>https://geek-rabb1t.github.io/grt65-expkit</id><content type="html" xml:base="https://geek-rabb1t.github.io/grt65-expkit"><![CDATA[<p>Futabaに採用したトラックパッド単体を簡単にお試しするためのキットです。<br />
+4本指までのマルチタッチ対応のトラックパッド + 3キー のマクロパッドとして機能します。</p>
+
+<p>組み立てにははんだ付けが必要となります。</p>
+
+<p>キットの販売ページはこちら</p>
+
+<ul>
+  <li><a href="https://geek-rabb1t.booth.pm/items/6697559">https://geek-rabb1t.booth.pm/items/6697559</a></li>
+</ul>
+
+<h2 id="対応スイッチ">対応スイッチ</h2>
+
+<ul>
+  <li>Kailh社のChocV1、ChocV2スイッチ、Lofree Low Profileスイッチに対応しています。</li>
+  <li>別途、M2サイズのスペーサーを用意することで、Cherry MXおよび、MX互換スイッチにも対応可能です。</li>
+</ul>
+
+<h2 id="トラックパッド">トラックパッド</h2>
+
+<p>4本指までのマルチタッチが可能なトラックパッドを採用。
+二本指でのスクロールはもちろん、3本指、4本指でのスワップジェスチャが可能です。</p>
+
+<p>スクロール方向はもちろん変更可能で、
+3本指、4本指のスワイプジェスチャには任意のキーを割り当て可能です。</p>
+
+<p>カスタマイズ手順は、<a href="/grt65-expkit/build_guide">ビルドガイド</a> を参考にしてください。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3531_1.jpg" alt="トラックパッド" /></p>
+
+<h3 id="注意">注意</h3>
+
+<p>PCからはマウスとして認識されます。<br />
+Windowsの高精細トラックパッドとしての機能や、Macのマジックトラックパッドとしては機能しません。</p>
+
+<p>スチールデスクなど、使用する環境によってはトラックパッドが誤動作する可能性があります。</p>
+
+<h2 id="注意事項">注意事項</h2>
+
+<ul>
+  <li>組み立てにははんだ付けが必要です。</li>
+  <li>あくまで個人が趣味で設計し、販売する自作キーボードです。市販品のようなサポートは期待しないでください。</li>
+  <li>キーボードの組み立てやカスタマイズには様々な知識が必要です。楽しめる人だけが買ってください。</li>
+</ul>
+
+<h2 id="組み立てカスタマイズ関連">組み立てカスタマイズ関連</h2>
+
+<ul>
+  <li><a href="/grt65-expkit/build_guide">ビルドガイドはこちら</a></li>
+</ul>
+
+<h2 id="設計データ">設計データ</h2>
+
+<ul>
+  <li><a href="https://github.com/geek-rabb1t/grt65-expkit">Github リポジトリはこちら</a></li>
+  <li><a href="https://github.com/geek-rabb1t/vial-qmk/tree/gr_master/keyboards/geek_rabb1t/grt65_exp_kit">ファームウェアはこちら</a></li>
+</ul>
+
+<h2 id="その他記事">その他記事</h2>
+<ul>
+  <li><a href="https://zenn.dev/geek_rabb1t/articles/a1940cf93c1766">Futabaのトラックパッドの制御ロジックについて</a></li>
+</ul>]]></content><author><name>geek-rabb1t</name></author><category term="works" /><category term="GR-Trackpad65 実験キット" /><category term="works" /><summary type="html"><![CDATA[Futabaに採用したトラックパッド単体を簡単にお試しするためのキットです。 4本指までのマルチタッチ対応のトラックパッド + 3キー のマクロパッドとして機能します。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://geek-rabb1t.github.io/assets/images/grt65-expkit/DSCF3531_1.jpg" /><media:content medium="image" url="https://geek-rabb1t.github.io/assets/images/grt65-expkit/DSCF3531_1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">GR-Trackpad65 実験キット ビルドガイド</title><link href="https://geek-rabb1t.github.io/grt65-expkit/build_guide" rel="alternate" type="text/html" title="GR-Trackpad65 実験キット ビルドガイド" /><published>2025-03-01T00:00:01+00:00</published><updated>2025-03-01T00:00:01+00:00</updated><id>https://geek-rabb1t.github.io/grt65-expkit/grt65-expkit-build-guide</id><content type="html" xml:base="https://geek-rabb1t.github.io/grt65-expkit/build_guide"><![CDATA[<h2 id="準備">準備</h2>
+
+<p>組み立て前に同梱物や追加で必要な部品、必要な工具を確認してください。</p>
+
+<h3 id="内容物の確認">内容物の確認</h3>
+
+<p>全ての写真はクリックして拡大可能できます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>分類</th>
+      <th>部品</th>
+      <th style="text-align: right">同梱数</th>
+      <th>写真</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>プレート</td>
+      <td>トッププレート</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3665.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>PCB</td>
+      <td>メインPCB</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3663.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>電子部品</td>
+      <td>トラックパッドモジュール</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3294_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>マイコンボード (型番: RP2040-Zero)</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3295_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>フラットケーブル (0.5mmピッチ6ピン) \</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3330.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>ピンヘッダ (2.54mmピッチ40ピン  )</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3346.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>部品</td>
+      <td>トラックパッドカバー (マット黒アクリル)</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3320_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>キャップボルト - M2 長さ10mm</td>
+      <td style="text-align: right">4</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3735_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>低頭小ねじ  - M2 長さ3.5mm</td>
+      <td style="text-align: right">4</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3735_2.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>両メネジスペーサー - M2 長さ6mm</td>
+      <td style="text-align: right">4</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3734_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>中空スペーサー  - M2 長さ3.5mm</td>
+      <td style="text-align: right">4</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3734_2.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>ゴム足</td>
+      <td style="text-align: right">4</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3733.jpg" width="100px"&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>注意: 付属のフラットケーブルは、写真のものより短い場合があります。</p>
+
+<h3 id="自分で用意するもの">自分で用意するもの</h3>
+
+<h4 id="ロープロファイルスイッチを使う場合">ロープロファイルスイッチを使う場合</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>部品</th>
+      <th>必要数</th>
+      <th>補足</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kailh ChocV1もしくは、Kailh ChocV2スイッチ</td>
+      <td>3</td>
+      <td>ChocV2互換のLofree Ghost等、 Kailh x Lofree Low-profileスイッチも対応</td>
+    </tr>
+    <tr>
+      <td>Low Profile対応1Uサイズキーキャップ</td>
+      <td>3</td>
+      <td>ChocV1とChocV2で軸の形が違うので間違えて買わないよう注意</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cherry-mxまたはmx互換スイッチを使う場合">Cherry MXまたは、MX互換スイッチを使う場合</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>部品</th>
+      <th>必要数</th>
+      <th>補足</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cherry MXまたは、MX互換スイッチ</td>
+      <td>3</td>
+      <td>ChocV2互換のLofree Ghost等、 Kailh x Lofree Low-profileスイッチも対応</td>
+    </tr>
+    <tr>
+      <td>Cherry MX対応1Uサイズキーキャップ</td>
+      <td>3</td>
+      <td>ChocV1とChocV2で軸の形が違うので間違えて買わないよう注意</td>
+    </tr>
+    <tr>
+      <td>中空スペーサー  - M2</td>
+      <td>4</td>
+      <td>スイッチ、キーキャップの組み合わせに合う長さを調達してください \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>|</td>
+      <td>スペーサーの長さによっては、キャップボルトも必要になります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="組み立てに必要な工具や道具">組み立てに必要な工具や道具</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>道具</th>
+      <th>用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>はんだごて</td>
+      <td>部品のはんだ付けに使用</td>
+    </tr>
+    <tr>
+      <td>はんだ</td>
+      <td>部品のはんだ付けに使用</td>
+    </tr>
+    <tr>
+      <td>ニッパー</td>
+      <td>はみ出したピンヘッダの切り落としに使用</td>
+    </tr>
+    <tr>
+      <td>No.0(PH0)サイズのプラスドライバー</td>
+      <td>ケースのねじ止めに使用</td>
+    </tr>
+    <tr>
+      <td>H1.5 サイズの6角ドライバー</td>
+      <td>ケースのねじ止めに使用（なくても何とかなります）</td>
+    </tr>
+    <tr>
+      <td>逆作用ピンセット</td>
+      <td>はんだ付け中の部品を固定するのに使用</td>
+    </tr>
+    <tr>
+      <td>両面テープ</td>
+      <td>トラックパッドの固定に使用  \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>クッションのない薄い両面テープを使用してください。 \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>0.16mm厚 の、 <code class="language-plaintext highlighter-rouge">ニトムズ はがせる 両面テープ 強力接着用</code> を推奨</td>
+    </tr>
+    <tr>
+      <td>やすり</td>
+      <td>切断面のバリ取りに使用</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="組み立て手順">組み立て手順</h2>
+
+<p>まず、PCBの表裏について説明します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>面</th>
+      <th>実装前</th>
+      <th>実装後</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>表</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3663.jpg" width="200px"&gt;</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3737_1.jpg" width="200px"&gt;</td>
+      <td>Front sideと印刷されています。こちらははんだ付けを行う面です。\</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>|</td>
+      <td>|</td>
+      <td>あらかじめ一部の部品が実装済みです。</td>
+    </tr>
+    <tr>
+      <td>裏</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3664.jpg" width="200px"&gt;</td>
+      <td>&lt;img src="/assets/images/grt65-expkit/DSCF3736_1.jpg" width="200px"&gt;</td>
+      <td>Back sideと印刷されています。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="足パーツを折る">足パーツを折る</h3>
+
+<p>最初に、足となるパーツを手で折ります。<br />
+足パーツは画像の赤枠の部分です。</p>
+
+<p><img src="/assets/images/grt65-expkit/leg.jpg" alt="足パーツ" /></p>
+
+<p>少し力をかけると簡単に折ることができます。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3667.jpg" alt="足を折る" /></p>
+
+<h3 id="マイコンボードrp2040-zeroの取り付け">マイコンボード(RP2040-Zero)の取り付け</h3>
+
+<h4 id="ファームウェアの書き込み">ファームウェアの書き込み</h4>
+
+<p>はんだ付け前にマイコンにファームウェアを書き込みます。</p>
+
+<p>マイコンにUSBケーブルを接続し、PCと接続します。<br />
+ストレージデバイスとして認識するので、リンク先からダウンロードしたファームウェアをコピーします。</p>
+
+<p>ビルド済みファームウェアへのリンク:<br />
+<a href="https://github.com/geek-rabb1t/grt65-expkit/raw/refs/heads/master/firmware/geek_rabb1t_grt65_exp_kit_vial.uf2">https://github.com/geek-rabb1t/grt65-expkit/raw/refs/heads/master/firmware/geek_rabb1t_grt65_exp_kit_vial.uf2</a></p>
+
+<p>ストレージとして認識しない場合、RESETとBOOTボタンを同時に押してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_1.png" alt="ファームウェアの書き込み" /></p>
+
+<h4 id="マイコンのはんだ付け手順">マイコンのはんだ付け手順</h4>
+
+<p>キット付属のピンヘッダをニッパーで切り分けます。
+切り分けた後のピンヘッダ</p>
+
+<ul>
+  <li>9本足： 2個</li>
+  <li>5本足： 1個</li>
+</ul>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3347.jpg" alt="切り取り後のピンヘッダ" /></p>
+
+<p>PCBの表面にUSBコネクタを上にしたRP2040-Zeroを置きます。
+PCBの裏面からピンヘッダーの足の短い方を差し込みます。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3682.jpg" alt="マイコンの固定" /></p>
+
+<p>別アングルから見るとこんな感じです。
+<img src="/assets/images/grt65-expkit/DSCF3678.jpg" alt="マイコンの固定" /></p>
+
+<p>逆作用ピンセットでRP2040-Zeroを抑えながら、マイコンとピンヘッダをはんだ付けします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3687.jpg" alt="マイコンのはんだ付け" /></p>
+
+<p>PCBの裏面にはみ出たピンヘッダをニッパーで切り取ります。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3691.jpg" alt="はみ出しを切り落とす" /></p>
+
+<p>残りの足も同じようにはんだ付けし、不要なピンヘッダを切り取ります。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3700.jpg" alt="残りのはんだ付け" /></p>
+
+<p>全てのピンヘッダを切り落としたら、PCBとピンヘッダもはんだ付けします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3702.jpg" alt="裏面のはんだ付け" /></p>
+
+<h3 id="スイッチの取り付け">スイッチの取り付け</h3>
+
+<p>PCBの裏面からスイッチを差し込み、足をはんだ付けします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3739_1.jpg" alt="裏面のはんだ付け" /></p>
+
+<h3 id="トラックパッドの取り付け">トラックパッドの取り付け</h3>
+
+<h4 id="トラックパッドの固定">トラックパッドの固定</h4>
+
+<p>トラックパッド裏側に両面テープを貼ります。<br />
+白線で囲った枠の外であればどこに貼り付けてもかまいません。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3422.jpg" alt="トラックパッドに両面テープを貼り付ける" /></p>
+
+<p>トッププレートの Trackpad Here と書いてある場所にトラックパッドを載せて固定します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3707.jpg" alt="トッププレートに固定" /></p>
+
+<h4 id="トラックパッドカバーの固定">トラックパッドカバーの固定</h4>
+
+<p>トラックパッドカバーの保護紙をはがします。<br />
+表裏で触り心地が異なります。触り心地の良い面が表側になるようにしてください。</p>
+
+<p>裏側になる面一面に両面テープを貼り付けます。両面テープは重ねず、全面に貼るようにしてください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3427.jpg" alt="トラックパッドカバーへの両面テープの貼り付け" /></p>
+
+<p>はみ出た部分をカッターなどで切り落とします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3430.jpg" alt="両面テープの切り落とし" /></p>
+
+<p>両面テープをはがし、トラックパッドに貼り付けます。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3709.jpg" alt="トラックパッドカバーの貼り付け" /></p>
+
+<h4 id="フラットケーブルの接続">フラットケーブルの接続</h4>
+
+<p>トラックパッド裏面（部品が実装済みの面）のFFCコネクタの黒い部分をトラックパッドと平行に引っ張り、ロックを解除します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3711.jpg" alt="FFCコネクタのロック解除" /></p>
+
+<p>フラットケーブルの青い面を上にして、フラットケーブルをまっすぐ差し込みます。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3712.jpg" alt="フラットケーブルを差し込む" /></p>
+
+<p>FFCコネクタの黒い部分を押し込み、ロックします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3713.jpg" alt="コネクタのロック" /></p>
+
+<p>同じようにして、PCB側にもフラットケーブルを接続します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3715.jpg" alt="PCB側のケーブル接続" /></p>
+
+<h3 id="ねじ止め">ねじ止め</h3>
+
+<p>キャップボルトと両メネジスペーサーを使って、トッププレート、中空スペーサー、PCBを固定します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3721.jpg" alt="ネジの順番" /></p>
+
+<p>足パーツはM2ネジで固定します。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3722.jpg" alt="足パーツの固定" /></p>
+
+<p>はみ出したフラットケーブルはトッププレートとPCBの隙間に入れ邪魔にならないようにします。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3723.jpg" alt="フラットケーブルの処理" /></p>
+
+<p>足パーツにゴム足を付けたら完成です。</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3725.jpg" alt="ゴム足" /></p>
+
+<h2 id="動作確認">動作確認</h2>
+
+<h3 id="vial-の起動">Vial の起動</h3>
+
+<p>Chrome等WebHIDに対応したブラウザの場合、 以下のURLにアクセスして ブラウザ版のアプリを起動します。</p>
+
+<p><a href="https://vial.rocks/">https://vial.rocks/</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">Start Vial</code> ボタンが表示される場合、そのままボタンを押して、 Vialを開始します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_2.png" alt="Start Vial" /></p>
+
+<p>このようなダイアログが表示されたら、<code class="language-plaintext highlighter-rouge">GRT65-expkit</code> を選択します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_3.png" alt="ペアリング" /></p>
+
+<p>ボタンが表示されない場合はWebHID非対応ブラウザなので、デスクトップアプリを使用してください。<br />
+非対応ブラウザの場合は以下のURLから <code class="language-plaintext highlighter-rouge">Download Vial</code> を選んで、デスクトップアプリをインストールできます。</p>
+
+<p><a href="https://get.vial.today/">https://get.vial.today/</a></p>
+
+<p>ここでは利用者の多そうなブラウザ版で説明します。
+デスクトップ版も同じ操作です。</p>
+
+<h3 id="キー入力の確認">キー入力の確認</h3>
+
+<p>Matrix testerタブを開き、ロックを解除します。
+Vialのロック解除は3つのスイッチを長押しします。</p>
+
+<h4 id="各キーの動作確認">各キーの動作確認</h4>
+
+<p>全部のキーを入力し、正しく入力できるか確認してください。<br />
+下のスクリーンショットの状態になったらOKです。（ロック解除できている時点で入力できています。）</p>
+
+<p>トラックパッドのスワイプジェスチャについてはマトリックステスターではテストできません。</p>
+
+<p><img src="/assets/images/grt65-expkit/screenshot_1.png" alt="キー入力確認" /></p>
+
+<p>上手く動かない場合、ページ下部の<a href="#トラブルシューティング">トラブルシューティング</a> を参考に対応してください。<br />
+トラックパッドは指の移動にあわせてカーソルが動けばOKです。</p>
+
+<h2 id="組み立てが終わったら">組み立てが終わったら</h2>
+
+<p>出来上がった作品は <code class="language-plaintext highlighter-rouge">#grt65_expkit</code> タグをつけてSNSに投稿してください。<br />
+余計な部分を切り取れば、ブレッドボードで実験できるように設計しているので色々遊んでみてくださいね～</p>
+
+<p><img src="/assets/images/grt65-expkit/DSCF3732_2.jpg" alt="完成写真" /></p>
+
+<hr />
+<h2 id="カスタマイズ">カスタマイズ</h2>
+
+<h3 id="デフォルトのキーマップ">デフォルトのキーマップ</h3>
+
+<p>デフォルトのキーマップは以下の通りです。<br />
+トラックパッド下の物理スイッチは枠内のエリアで設定可能です。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap.jpg" alt="デフォルトキーマップ" /></p>
+
+<h3 id="トラックパッドのカスタマイズ">トラックパッドのカスタマイズ</h3>
+
+<p>Vial上でカスタマイズできます。<br />
+一部の項目はレイヤー0(デフォルトレイヤー) でのみ設定可能です。</p>
+
+<p>タップやスワイプジェスチャの挙動に加え、カーソル速度やスクロール速度などを設定可能です。</p>
+
+<h3 id="カーソルに関する設定">カーソルに関する設定</h3>
+
+<p>レイヤー0(デフォルトレイヤー) で設定します。<br />
+他のレイヤーに設定しても機能しないので注意してください。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap-cursor.jpg" alt="カーソル設定" /></p>
+
+<p>項目ごとに決まったキーコードのみ指定可能です。
+無効なキーコードが指定された場合は初期値を使います。</p>
+
+<p>この項目はキーボードを再接続するまで反映されません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>指定可能な値</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>カーソル速度</td>
+      <td>Cursor Speed</td>
+      <td><code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Val 5</code></td>
+      <td>カーソルの移動速度を設定します。数値が大きいほど速くなります。</td>
+    </tr>
+    <tr>
+      <td>カーソルの加速</td>
+      <td>Cursor Acceleration</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>カーソルの加速有無を設定します。</td>
+    </tr>
+    <tr>
+      <td>慣性カーソル</td>
+      <td>Inertia Cursor</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>カーソル移動中に指を離したときにそのままカーソルを移動するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>カーソル補正</td>
+      <td>Cursor Correction</td>
+      <td><code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Val 2</code></td>
+      <td>カーソル補正の強さを設定します。 \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>|</td>
+      <td>|</td>
+      <td>|</td>
+      <td>数値を大きくすると補正が強くなりますが、遅延が大きくなります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="スクロールに関する設定">スクロールに関する設定</h3>
+
+<p>レイヤー0(デフォルトレイヤー) で設定します。
+他のレイヤーに設定しても機能しないので注意してください。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap-scroll.jpg" alt="スクロール設定" /></p>
+
+<p>項目ごとに決まったキーコードのみ指定可能です。
+無効なキーコードが指定された場合は初期値を使います。</p>
+
+<p>この項目はキーボードを再接続するまで反映されません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>指定可能な値</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>スクロール速度</td>
+      <td>Scroll Speed</td>
+      <td><code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Val 4</code></td>
+      <td>スクロール速度を設定します。数値が大きいほど速くなります。</td>
+    </tr>
+    <tr>
+      <td>垂直スクロールの反転</td>
+      <td>Reverse Vertical Scroll</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>垂直方向のスクロールを反転するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>水平スクロールの反転</td>
+      <td>Reverse Horizontal Scroll</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>水平方向のスクロールを反転するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>慣性スクロール</td>
+      <td>Inertia Scroll</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>スクロール中に指を離したときにそのままスクロールを継続するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>スクロールのみ</td>
+      <td>Scroll Only</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>ONにすると、カーソル移動が無効になりスクロールのみになります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="トラックパッドの向きに関する設定">トラックパッドの向きに関する設定</h3>
+
+<p>レイヤー0(デフォルトレイヤー) で設定します。
+他のレイヤーに設定しても機能しないので注意してください。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap-rotate.jpg" alt="向きの設定" /></p>
+
+<p>項目ごとに決まったキーコードのみ指定可能です。
+無効なキーコードが指定された場合は初期値を使います。</p>
+
+<p>この項目はキーボードを再接続するまで反映されません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>指定可能な値</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>トラックパッドの回転</td>
+      <td>Rotate</td>
+      <td><code class="language-plaintext highlighter-rouge">R0</code> - <code class="language-plaintext highlighter-rouge">R270</code></td>
+      <td><code class="language-plaintext highlighter-rouge">R0</code></td>
+      <td>トラックパッドの向きを反時計回りで設定します。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="タップ">タップ</h3>
+
+<p>レイヤーごとに個別の設定が可能です。<br />
+1本指から4本指までのタップ挙動を設定できます。</p>
+
+<p><img src="/assets/images/grt65-expkit/keymap-tap.jpg" alt="タップ設定" /></p>
+
+<p>デフォルトは以下の設定になっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1本指タップ</td>
+      <td>One Finger Tap</td>
+      <td>Mouse1</td>
+      <td>左クリック</td>
+    </tr>
+    <tr>
+      <td>2本指タップ</td>
+      <td>Two Finger Tap</td>
+      <td>Mouse2</td>
+      <td>右クリック</td>
+    </tr>
+    <tr>
+      <td>3本指タップ</td>
+      <td>Three Finger Tap</td>
+      <td>Mouse3</td>
+      <td>ホイールクリック</td>
+    </tr>
+    <tr>
+      <td>4本指タップ</td>
+      <td>Four Finger Tap</td>
+      <td>Win + S</td>
+      <td>検索機能へのショートカット</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="スワイプジェスチャ">スワイプジェスチャ</h3>
+
+<p>レイヤーごとに個別の設定が可能です。<br />
+3本指、4本指のスワイプジェスチャの挙動を設定できます。</p>
+
+<h4 id="3本指">3本指</h4>
+
+<p><img src="/assets/images/grt65-expkit/keymap-3finger.jpg" alt="layer-0-3finger" /></p>
+
+<p>デフォルトでは以下のキーバインドになっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>スワイプ方向</th>
+      <th>イメージ</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上</td>
+      <td>&lt;img src="/assets/images/futaba/customize/3finger-up.jpg" width="200px"&gt;</td>
+      <td>タスクビュー(Win + Tab)</td>
+    </tr>
+    <tr>
+      <td>下</td>
+      <td>&lt;img src="/assets/images/futaba/customize/3finger-down.jpg" width="200px"&gt;</td>
+      <td>デスクトップ表示(Win + D)</td>
+    </tr>
+    <tr>
+      <td>左</td>
+      <td>&lt;img src="/assets/images/futaba/customize/3finger-left.jpg" width="200px"&gt;</td>
+      <td>ブラウザの戻る(マウスのボタン4)</td>
+    </tr>
+    <tr>
+      <td>右</td>
+      <td>&lt;img src="/assets/images/futaba/customize/3finger-right.jpg" width="200px"&gt;</td>
+      <td>ブラウザの進む(マウスのボタン5)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="4本指">4本指</h4>
+
+<p><img src="/assets/images/grt65-expkit/keymap-4finger.jpg" alt="layer-0-4finger" /></p>
+
+<p>デフォルトでは以下のキーバインドになっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>スワイプ方向</th>
+      <th>イメージ</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上</td>
+      <td>&lt;img src="/assets/images/futaba/customize/4finger-up.jpg" width="200px"&gt;</td>
+      <td>タスクビュー(Win + Tab)</td>
+    </tr>
+    <tr>
+      <td>下</td>
+      <td>&lt;img src="/assets/images/futaba/customize/4finger-down.jpg" width="200px"&gt;</td>
+      <td>デスクトップ表示(Win + D)</td>
+    </tr>
+    <tr>
+      <td>左</td>
+      <td>&lt;img src="/assets/images/futaba/customize/4finger-left.jpg" width="200px"&gt;</td>
+      <td>左のデスクトップへ移動(Win + Ctrl + ←)</td>
+    </tr>
+    <tr>
+      <td>右</td>
+      <td>&lt;img src="/assets/images/futaba/customize/4finger-right.jpg" width="200px"&gt;</td>
+      <td>右のデスクトップへ移動(Win + Ctrl + →)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="カスタムキーコード">カスタムキーコード</h3>
+
+<p>Userタブにカスタムキーコードを用意しています。<br />
+実際に機能するものは一部で、大半はトラックパッドの設定用です。</p>
+
+<p><img src="/assets/images/futaba/customize/custom-keycode.jpg" alt="layer-1" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>キー</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CHi</td>
+      <td>このキーを押している間、カーソルの移動速度が2倍になります。</td>
+    </tr>
+    <tr>
+      <td>CLw</td>
+      <td>このキーを押している間、カーソルの移動速度が半分になります。</td>
+    </tr>
+    <tr>
+      <td>Scroll Mode</td>
+      <td>このキーを押している間はカーソル移動の代わりにスクロールします。 \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td><code class="language-plaintext highlighter-rouge">Scroll Only</code> が <code class="language-plaintext highlighter-rouge">ON</code>　の場合は、スクロールの代わりにカーソル移動します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code></td>
+      <td>トラックパッドの数値項目の設定に使用します。設定以外には使用できません。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>トラックパッドの機能の有効、無効を設定します。設定以外には使用できません。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">R0</code> - <code class="language-plaintext highlighter-rouge">R270</code></td>
+      <td>トラックパッドの向きの設定に使用します。設定以外には使用できません。</td>
+    </tr>
+    <tr>
+      <td>それ以外</td>
+      <td>設定項目のラベル表示用です。設定以外に使用できません。</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="トラブルシューティング">トラブルシューティング</h2>
+
+<p>上手く動かない場合は以下のトラブルシューティングを参考に対応してください。<br />
+それでも解決しない場合は、作者まで連絡してください。解決できるようサポートします。</p>
+
+<h3 id="認識しないキーがある場合">認識しないキーがある場合</h3>
+
+<p>キースイッチもしくは、マイコンのはんだ付けに失敗している可能性が高いです。<br />
+はんだ付けを確認してください。</p>
+
+<h3 id="トラックパッドが反応しない場合">トラックパッドが反応しない場合</h3>
+
+<p>トラックパッド側とPCB側のフラットケーブルコネクタを確認し、ケーブルがまっすぐ奥まで差し込めているか確認してください。
+ケーブルに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<p>動作確認時に、ケースに載せていない場合、トラックパッド下の素材の影響を受ける場合があります。
+反応しない場合は手順通り、ケースに載せてから再度確認してください。</p>]]></content><author><name>geek-rabb1t</name></author><category term="build_guide" /><category term="GR-Trackpad65 実験キット" /><category term="Build Guide" /><summary type="html"><![CDATA[準備]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://geek-rabb1t.github.io/assets/images/grt65-expkit/DSCF3742.jpg" /><media:content medium="image" url="https://geek-rabb1t.github.io/assets/images/grt65-expkit/DSCF3742.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Futaba</title><link href="https://geek-rabb1t.github.io/futaba" rel="alternate" type="text/html" title="Futaba" /><published>2025-02-01T00:00:02+00:00</published><updated>2025-02-01T00:00:02+00:00</updated><id>https://geek-rabb1t.github.io/futaba</id><content type="html" xml:base="https://geek-rabb1t.github.io/futaba"><![CDATA[<p>持ち運び可能な <a href="https://note.com/geek_rabb1t/n/n2de5a0391c1a">Timothy</a> をコンセプトに設計した、トラックパッド付きの一体型キーボードです。
+Timothy最大の特徴である、一段下がった親指クラスタという特徴を受け継ぎつつも、ロープロファイルキースイッチの採用や、数字行を排除した40%デザインなど、様々な点で進化しています。</p>
+
+<p>Futabaという名前は、左右分割キーボードをくっつけた形が植物が発芽した時に現れる双葉に似てるところから来ています。
+（チモシーは単子葉類だから双葉にはならないんですが、、、こまかいことは気にしない。）</p>
+
+<p>キットの販売ページはこちら</p>
+
+<ul>
+  <li><a href="https://geek-rabb1t.booth.pm/items/6631691">https://geek-rabb1t.booth.pm/items/6631691</a></li>
+</ul>
+
+<h2 id="対応スイッチ">対応スイッチ</h2>
+
+<ul>
+  <li>Kailh社のChocV1、ChocV2スイッチ、Lofree Low Profileスイッチに対応しています。</li>
+  <li>Cherry MXおよび、MX互換スイッチには非対応です。</li>
+</ul>
+
+<h2 id="キー配列">キー配列</h2>
+
+<p>一般的なキーボードとは異なり、キーが上下にずれています。この配列により指を斜めに動かすことなく、上下に移動させるだけで打鍵できます。</p>
+
+<p><img src="/assets/images/futaba/DSCF3486.jpg" alt="キー配列" /></p>
+
+<h2 id="4度テント4度のチルト">4度テント、4度のチルト</h2>
+
+<p>Timothy同様、小指側から人差し指側に向かって4度の傾斜（テント角）がついており、中央が少し盛り上がっています。
+対して親指クラスタはテント角がついていません。これにより親指クラスタが一段下がるため、親指の力を抜いた状態でキーを打つことができます。</p>
+
+<p><img src="/assets/images/futaba/DSCF3471.jpg" alt="親指クラスタ" /></p>
+
+<p>また、手前から奥に向かっても4度の傾斜（チルト角）がついており、遠くのキーも打ちやすくなっています。</p>
+
+<p><img src="/assets/images/futaba/DSCF3473.jpg" alt="チルト角" /></p>
+
+<h2 id="トラックパッド">トラックパッド</h2>
+
+<p>4本指までのマルチタッチが可能なトラックパッドを採用。
+二本指でのスクロールはもちろん、3本指、4本指でのスワップジェスチャが可能です。</p>
+
+<p>スクロール方向はもちろん変更可能で、
+3本指、4本指のスワイプジェスチャには任意のキーを割り当て可能です。</p>
+
+<p>カスタマイズ手順は、<a href="/futaba/customize_guide">カスタマイズガイド</a> を参考にしてください。</p>
+
+<p><img src="/assets/images/futaba/DSCF3489.jpg" alt="トラックパッド" /></p>
+
+<h3 id="注意">注意</h3>
+
+<p>PCからはマウスとして認識されます。<br />
+Windowsの高精細トラックパッドとしての機能や、Macのマジックトラックパッドとしては機能しません。</p>
+
+<p>スチールデスクなど、使用する環境によってはトラックパッドが誤動作する可能性があります。</p>
+
+<h2 id="巨大ホイール">巨大ホイール</h2>
+
+<p>トラックパッド方向に押し込むことでクリックも可能な巨大ホイールを配置。ホームポジションに手を置いたまま、親指で操作可能です。
+グリップ力の高いゴム足を採用することで、快適なホイールクリックを実現。</p>
+
+<p><img src="/assets/images/futaba/DSCF3490.jpg" alt="巨大ホイール" /></p>
+
+<h3 id="注意-1">注意</h3>
+<p>これはロマン機構です。あまり実用性を考えずに作ったのでいい感じに使いこなしてください。
+画期的な使い方を見つけた方はぎーくらびっとに教えてください。</p>
+
+<h2 id="狭い場所でも使いやすいケーブルガイド">狭い場所でも使いやすいケーブルガイド</h2>
+
+<p>USBコネクタをキーボード本体で隠し、ケーブルも左右、中央と3方向へ出せる用になっています。
+これにより狭いスペースでケーブルやコネクタが干渉するという状況を回避しています。</p>
+
+<p><img src="/assets/images/futaba/DSCF3466_1.jpg" alt="チルト角" /></p>
+
+<p>ケーブルを左右に出すためのガイドはコネクタの負担を減らすようにデザインしています。</p>
+
+<p><img src="/assets/images/futaba/DSCF3480.jpg" alt="ケーブルガイド" /></p>
+
+<h2 id="柔らかな打鍵感">柔らかな打鍵感</h2>
+
+<p>PCBに切れ目を入れるフレックスカット、クッションのみでPCBを保持するスタックマウント、これらを採用することで柔らかな打鍵感を実現しています。
+底打ち感がほとんどないため、 <a href="https://talpkeyboard.net/items/66a056514c088e035d0344b3">Kailh Deep Sea Silent MINI ロープロファイルスイッチ Islet</a> や、 <a href="https://talpkeyboard.net/items/66a0596a545dc7002b5dea18">Kailh Deep Sea Silent MINI ロープロファイルスイッチ Whale</a> といった、silentスイッチと組み合わせて使うと心地よく使うことができます。</p>
+
+<p><img src="/assets/images/futaba/DSCF3491.jpg" alt="スタックマウント" /></p>
+
+<h2 id="注意事項">注意事項</h2>
+
+<ul>
+  <li>あくまで個人が趣味で設計し、販売する自作キーボードです。市販品のようなサポートは期待しないでください。</li>
+  <li>キーボードの組み立てやカスタマイズには様々な知識が必要です。楽しめる人だけが買ってください。</li>
+  <li>筐体はJLC3DPさんによる3Dプリント品です。大きな反りが出ないよう設計していますが、多少の反りや変形は許容願います。</li>
+  <li>筐体の塗装はJLC3DPさん提供のスプレーペイントサービスを使用しています。塗りがあまかったったり、内部が未塗装の場合もありますが仕様です。</li>
+</ul>
+
+<h2 id="組み立てカスタマイズ関連">組み立てカスタマイズ関連</h2>
+
+<ul>
+  <li><a href="/futaba/build_guide">ビルドガイドはこちら</a></li>
+  <li><a href="/futaba/customize_guide">カスタマイズはこちら</a></li>
+</ul>
+
+<h2 id="設計データ">設計データ</h2>
+<ul>
+  <li><a href="https://github.com/geek-rabb1t/futaba">Github リポジトリはこちら</a></li>
+  <li><a href="https://github.com/geek-rabb1t/vial-qmk/tree/gr_master/keyboards/geek_rabb1t/futaba">ファームウェアはこちら</a></li>
+</ul>
+
+<h2 id="その他記事">その他記事</h2>
+<ul>
+  <li><a href="https://zenn.dev/geek_rabb1t/articles/319136c43a6921">Futaba成長記</a></li>
+  <li><a href="https://zenn.dev/geek_rabb1t/articles/a1940cf93c1766">Futabaのトラックパッドの制御ロジックについて</a></li>
+</ul>]]></content><author><name>geek-rabb1t</name></author><category term="works" /><category term="Futaba" /><category term="works" /><summary type="html"><![CDATA[持ち運び可能な Timothy をコンセプトに設計した、トラックパッド付きの一体型キーボードです。 Timothy最大の特徴である、一段下がった親指クラスタという特徴を受け継ぎつつも、ロープロファイルキースイッチの採用や、数字行を排除した40%デザインなど、様々な点で進化しています。]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://geek-rabb1t.github.io/assets/images/banners/home.jpg" /><media:content medium="image" url="https://geek-rabb1t.github.io/assets/images/banners/home.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Futabaビルドガイド</title><link href="https://geek-rabb1t.github.io/futaba/build_guide" rel="alternate" type="text/html" title="Futabaビルドガイド" /><published>2025-02-01T00:00:01+00:00</published><updated>2025-02-01T00:00:01+00:00</updated><id>https://geek-rabb1t.github.io/futaba/futaba-build-guide</id><content type="html" xml:base="https://geek-rabb1t.github.io/futaba/build_guide"><![CDATA[<h2 id="準備">準備</h2>
+
+<p>組み立て前に同梱物や追加で必要な部品、必要な工具を確認してください。</p>
+
+<h3 id="内容物の確認">内容物の確認</h3>
+
+<p>全ての写真はクリックして拡大可能できます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>分類</th>
+      <th>部品</th>
+      <th style="text-align: right">同梱数</th>
+      <th>写真</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ケース</td>
+      <td>トップケース</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3283.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>ボトムケース</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3285.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>フォーム</td>
+      <td>トップフォーム (右・中・左)</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3290.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>ボトムフォーム (右・中・左)</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3292.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>PCB</td>
+      <td>メインPCB</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3281.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>電子部品</td>
+      <td>トラックパッドモジュール</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3294_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>chocソケット</td>
+      <td style="text-align: right">49</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3313_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>ロータリーエンコーダー(型番: EC12E2420301)</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3307_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>マイコンボード (型番: RP2040-Zero)</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3295_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>マイクロスイッチ</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3318_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>フラットケーブル (0.5mmピッチ6ピン  )</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3330.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>ピンヘッダ (2.54mmピッチ40ピン  )</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3346.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>部品</td>
+      <td>クリッカー</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3305_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>ホイール</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3296_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>トラックパッドカバー (マット黒アクリル)</td>
+      <td style="text-align: right">1</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3320_1.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>タッピングビス(短)  - M3 長さ6mm</td>
+      <td style="text-align: right">2</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3321_2.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>タッピングビス(長)  - M3 長さ8mm</td>
+      <td style="text-align: right">6</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3321_3.jpg" width="100px"&gt;</td>
+    </tr>
+    <tr>
+      <td>^^</td>
+      <td>ゴム足</td>
+      <td style="text-align: right">10</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3586.jpg" width="100px"&gt;</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="自分で用意するもの">自分で用意するもの</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>部品</th>
+      <th>必要数</th>
+      <th>補足</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kailh ChocV1もしくは、Kailh ChocV2スイッチ</td>
+      <td>49</td>
+      <td>ChocV2互換のLofree Ghost等、 Kailh x Lofree Low-profileスイッチも対応</td>
+    </tr>
+    <tr>
+      <td>Low Profile対応1Uサイズキーキャップ</td>
+      <td>49</td>
+      <td>ChocV1とChocV2で軸の形が違うので間違えて買わないよう注意</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>ぎーくらびっとのおススメスイッチ</p>
+<ul>
+  <li><a href="https://talpkeyboard.net/items/66a056514c088e035d0344b3">Kailh Deep Sea Silent MINI ロープロファイルスイッチ Islet</a></li>
+  <li><a href="https://talpkeyboard.net/items/66a0596a545dc7002b5dea18">Kailh Deep Sea Silent MINI ロープロファイルスイッチ Whale</a></li>
+  <li><a href="https://lofree.co.jp/products/ghost-low-profile-pom-switches?variant=50487412556007">Kailh x Lofree Ghost</a></li>
+</ul>
+
+<p>確認済みキーキャップ</p>
+<ul>
+  <li><a href="https://talpkeyboard.net/?category_id=66e79046a6782d33e6380dab">Tai-Hao Thins</a></li>
+  <li><a href="https://amzn.asia/d/cjRH1xz">XVXロープロファイルキーキャップ</a></li>
+</ul>
+
+<h2 id="組み立てに必要な工具や道具">組み立てに必要な工具や道具</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>道具</th>
+      <th>用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>はんだごて</td>
+      <td>部品のはんだ付けに使用</td>
+    </tr>
+    <tr>
+      <td>はんだ</td>
+      <td>部品のはんだ付けに使用</td>
+    </tr>
+    <tr>
+      <td>ニッパー</td>
+      <td>はみ出したピンヘッダの切り落としに使用</td>
+    </tr>
+    <tr>
+      <td>No.1(PH1)サイズのプラスドライバー</td>
+      <td>ケースのねじ止めに使用\</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>ビット交換式等、極端に短いドライバーだとネジに届かない場合があります。</td>
+    </tr>
+    <tr>
+      <td>逆作用ピンセット</td>
+      <td>はんだ付け中の部品を固定するのに使用</td>
+    </tr>
+    <tr>
+      <td>両面テープ</td>
+      <td>トラックパッドの固定に使用  \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>クッションのない薄い両面テープを使用してください。 \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>0.16mm厚 の、 <code class="language-plaintext highlighter-rouge">ニトムズ はがせる 両面テープ 強力接着用</code> を推奨</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="組み立て手順">組み立て手順</h2>
+
+<p>まず、PCBの表裏について説明します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>面</th>
+      <th>実装前</th>
+      <th>実装後</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>表</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3282.jpg" width="200px"&gt;</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3382.jpg" width="200px"&gt;</td>
+      <td>表面はキースイッチをはめる面です。\</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>|</td>
+      <td>|</td>
+      <td>マイクロスイッチとロータリーエンコーダーを実装します。</td>
+    </tr>
+    <tr>
+      <td>裏</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3281.jpg" width="200px"&gt;</td>
+      <td>&lt;img src="/assets/images/futaba_build_guide/DSCF3385.jpg" width="200px"&gt;</td>
+      <td>Futabaと印刷されています。\</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>|</td>
+      <td>|</td>
+      <td>一部の部品は実装済みです。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="電子部品のはんだ付け">電子部品のはんだ付け</h3>
+
+<h4 id="chocソケットの取り付け">chocソケットの取り付け</h4>
+
+<p>PCBの裏面で作業します。</p>
+
+<p>chocソケットには向きがあります。向きを間違えるとスイッチが外れやすくなったり、キー入力できない場合があります。ソケットの向きを間違えないように注意してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3334.jpg" alt="ソケットの向き" /></p>
+
+<p>また、PCBが薄いためchocソケットがPCBからはみ出します。そのため、一つ一つ、逆作用ピンセットで抑えながらはんだ付けしてください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3342.jpg" alt="逆作用ピンセットで抑える" /></p>
+
+<p>ピンセットで固定するため以下の順番に作業してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3385_1.jpg" alt="はんだ付け順" /></p>
+
+<h4 id="マイコンボードrp2040-zeroの取り付け">マイコンボード(RP2040-Zero)の取り付け</h4>
+
+<p><strong>ファームウェアの書き込み</strong></p>
+
+<p>はんだ付け前にマイコンにファームウェアを書き込みます。</p>
+
+<p>マイコンにUSBケーブルを接続し、PCと接続します。<br />
+ストレージデバイスとして認識するので、リンク先からダウンロードしたファームウェアをコピーします。</p>
+
+<p>ビルド済みファームウェアへのリンク:<br />
+<a href="https://github.com/geek-rabb1t/futaba/raw/refs/heads/master/firmware/geek_rabb1t_futaba_vial.uf2">https://github.com/geek-rabb1t/futaba/raw/refs/heads/master/firmware/geek_rabb1t_futaba_vial.uf2</a></p>
+
+<p>ストレージとして認識しない場合、RESETとBOOTボタンを同時に押してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_1.png" alt="ファームウェアの書き込み" /></p>
+
+<p><strong>マイコンのはんだ付け手順</strong></p>
+
+<p>キット付属のピンヘッダを写真のように切り分けます。<br />
+ニッパーで切ってもいいですが、基板にピンヘッダを差し込んで手で折るのが簡単です。</p>
+
+<p>切り分けた後のピンヘッダ</p>
+
+<ul>
+  <li>9本足： 2個</li>
+  <li>5本足： 1個</li>
+</ul>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3347.jpg" alt="切り取り後のピンヘッダ" /></p>
+
+<p>PCBの裏面にRP2040-Zeroに切り分けたピンヘッダーを差し込み、その上にRP2040-Zeroを載せます。<br />
+写真のように、USBコネクタの実装面が見えるように差し込みます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3348.jpg" alt="マイコンの固定" /></p>
+
+<p>逆作用ピンセットでにRP2040-Zeroを抑えながら、PCBからはみ出た四隅のピンをニッパーで切ります。
+ニッパーで切り落としたら、四隅だけはんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3360.jpg" alt="はみ出しを切り落とす" /></p>
+
+<p>RP2040-Zero からはみ出たピンも同じようにニッパーで切り落としはんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3365.jpg" alt="四隅のはんだ付け後" /></p>
+
+<p>これでPCBとRP2040-Zeroが固定されるので、逆作用ピンセットは外してかまいません。<br />
+PCB側の残りのピンを全て切り取り、はんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3367.jpg" alt="PCB側のマイコンはんだ付け後" /></p>
+
+<p>RP2040-Zeroも同様にはみ出たピンを全て切り取り、はんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3370.jpg" alt="マイコンはんだ付け後" /></p>
+
+<h4 id="マイクロスイッチの取り付け">マイクロスイッチの取り付け</h4>
+
+<p><strong>ここから部品を配置する面が変わります。</strong><br />
+<strong>間違えないよう注意してください。</strong></p>
+
+<p>PCBの表面にマイクロスイッチを差し込みます。
+マイクロスイッチを逆作用ピンセットで抑えた状態ではみ出た足をニッパーで切り取ります。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3371.jpg" alt="マイクロスイッチの固定" /></p>
+
+<p>ピンセットで固定したままはんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3374.jpg" alt="マイクロスイッチのはんだ付け" /></p>
+
+<h4 id="ロータリーエンコーダーの取り付け">ロータリーエンコーダーの取り付け</h4>
+
+<p>PCBの表側からロータリーエンコーダーを差し込みます。
+PCBからはみ出した細い3本の足をニッパーで切り取ります。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3377.jpg" alt="ロータリーエンコーダの固定" /></p>
+
+<p>ニッパーで切り取った足をはんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3378.jpg" alt="ロータリーエンコーダのはんだ付け" /></p>
+
+<p>2本の太い足を切り取り、はんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3393.jpg" alt="ロータリーエンコーダの足のはんだ付け" /></p>
+
+<p>はんだ付けは以上となります。</p>
+
+<h3 id="各種部品の取り付け">各種部品の取り付け</h3>
+
+<h4 id="スイッチの取り付け">スイッチの取り付け</h4>
+
+<p>PCBの表面の上にトップフォームを重ねます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3387.jpg" alt="フォームを重ねる" /></p>
+
+<p>上からスイッチをはめ込みます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3389.jpg" alt="ロータリーエンコーダのはんだ付け" /></p>
+
+<h4 id="クリッカーの取り付け">クリッカーの取り付け</h4>
+
+<p>PCBの表面のからクリッカーをはめます。
+写真の赤枠部分をつぶすようにつまみながら、下に押し込みます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3392.jpg" alt="クリッカーの取り付け" /></p>
+
+<p>取り外すときは、同じようにつまみながら引き抜きます。</p>
+
+<h4 id="ホイールの取り付け">ホイールの取り付け</h4>
+
+<p>クリッカーが取り付け済みであることを確認してから、エンコーダーにホイールを取り付けます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3397.jpg" alt="ホイールの取り付け" /></p>
+
+<p>この時点ではまだトラックパッドは取り付けません。</p>
+
+<h3 id="vial-の起動">Vial の起動</h3>
+
+<p>Chrome等WebHIDに対応したブラウザの場合、 以下のURLにアクセスして ブラウザ版のアプリを起動します。</p>
+
+<p><a href="https://vial.rocks/">https://vial.rocks/</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">Start Vial</code> ボタンが表示される場合、そのままボタンを押して、 Vialを開始します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_2.png" alt="Start Vial" /></p>
+
+<p>このようなダイアログが表示されたら、<code class="language-plaintext highlighter-rouge">Futaba</code> を選択します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_3.png" alt="ペアリング" /></p>
+
+<p>ボタンが表示されない場合はWebHID非対応ブラウザなので、デスクトップアプリを使用してください。<br />
+非対応ブラウザの場合は以下のURLから <code class="language-plaintext highlighter-rouge">Download Vial</code> を選んで、デスクトップアプリをインストールできます。</p>
+
+<p><a href="https://get.vial.today/">https://get.vial.today/</a></p>
+
+<p>ここでは利用者の多そうなブラウザ版で説明します。
+デスクトップ版も同じ操作です。</p>
+
+<h3 id="キー入力とホイールの動作確認">キー入力とホイールの動作確認</h3>
+
+<p>まず、マイコンにUSBケーブルを刺し、PCに接続します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3398.jpg" alt="ロック解除" /></p>
+
+<p>Vialを起動します。</p>
+
+<p>Matrix testerタブを選択し、右下のunlockボタンを押します。<br />
+以下のダイアログが表示されたら左上と右上のキーを押しながらロックを解除します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_5.png" alt="ロック解除画面" /></p>
+
+<p>Vialのロック解除は赤枠の2キーを長押しします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3389_1.jpg" alt="ロック解除で押すキー" /></p>
+
+<h4 id="各キーの動作確認">各キーの動作確認</h4>
+
+<p>全部のキーを入力し、正しく入力できるか確認してください。</p>
+
+<p>ロータリーエンコーダーの回転とトラックパッドの入力はテストできないので、下のスクリーンショットの状態になったらOKです。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_7.png" alt="キー入力確認" /></p>
+
+<p>初期状態では、トラックパッド上の真ん中のキーには <code class="language-plaintext highlighter-rouge">F5</code> キーを割り当てています。<br />
+ブラウザ版のVialを使っている場合、このキーを押すとページの再読み込みが発生します。
+ここでは動作確認したいだけなので、ページの再読み込みをもって入力できたと判断してもらって構いません。</p>
+
+<p>上手く動かない場合、ページ下部の<a href="#トラブルシューティング">トラブルシューティング</a> を参考に対応してください。</p>
+
+<h4 id="ホイールの動作確認">ホイールの動作確認</h4>
+
+<p>ホイールの回転とホイールクリックで入力が発生するか確認してください。</p>
+
+<p>ホイールクリックは、通常のキー入力と同じように Matrix testerで確認できます。</p>
+
+<p>ホイールの回転には、カーソルの上キーと下キーが割り当てられています。<br />
+テキストエディタなどでカーソルが上下に移動するか確認してください。</p>
+
+<p>上手く動かない場合、ページ下部の<a href="#トラブルシューティング">トラブルシューティング</a> を参考に対応してください。</p>
+
+<h4 id="トラックパッドの取り付けと動作確認">トラックパッドの取り付けと動作確認</h4>
+
+<p><strong>始めに、マイコンからUSBケーブルを抜きます。</strong><br />
+トラックパッド裏面（部品が実装済みの面）のFFCコネクタの黒い部分をトラックパッドと平行に引っ張り、ロックを解除します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3403.jpg" alt="FFCコネクタのロック解除" /></p>
+
+<p>フラットケーブルの青い面を上にして、フラットケーブルをまっすぐ差し込みます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3406.jpg" alt="フラットケーブルを差し込む" /></p>
+
+<p>FFCコネクタの黒い部分を押し込み、ロックします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3409.jpg" alt="コネクタのロック" /></p>
+
+<p>トラックパッドをトップケースの上に載せます。
+この時点では固定しません。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3410.jpg" alt="ケースに置く" /></p>
+
+<p>トラックパッドと同様の手順でフラットケーブルをPCBに接続します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3482.jpg" alt="PCB側のフラットケーブル接続" /></p>
+
+<p>トラックパッドの上にトラックパッドカバー（マットアクリル板）を載せます。<br />
+この時点では仮固定なので、どちらを上に向けてもかまいません。
+PCBにUSBケーブルを差し込みます。　</p>
+
+<p>トラックパッド上で指を動かし、カーソルが動くか確認してください。<br />
+この時点では仮固定の状態なのでカーソルの反応が悪い可能性があります。<br />
+反応すれば問題ないので、次の手順に進んでください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3418.jpg" alt="ドラックパッドの動作確認" /></p>
+
+<p>上手く動かない場合、ページ下部の<a href="#トラブルシューティング">トラブルシューティング</a> を参考に対応してください。</p>
+
+<h3 id="ケースへの組み込み">ケースへの組み込み</h3>
+
+<h4 id="トラックパッドの固定">トラックパッドの固定</h4>
+
+<p>トラックパッド裏側に両面テープを貼ります。<br />
+作業の邪魔になる場合は一度フラットケーブルを外してください。<br />
+写真のように、白いシルクに沿って縦に貼り付けて下さい。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3421.jpg" alt="両面テープの貼り付け" /></p>
+
+<p>トラックパッドからはみ出る部分はカッターなどで切り落とします。
+<img src="/assets/images/futaba_build_guide/DSCF3422.jpg" alt="はみ出た個所を切り落とす" /></p>
+
+<p>フラットケーブル外している場合は、ここで取り付けます。</p>
+
+<p>両面テープの剥離紙をはがし、トラックパッドをトップケースに固定します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3432.jpg" alt="ケースへの固定" /></p>
+
+<h4 id="トラックパッドカバーの固定">トラックパッドカバーの固定</h4>
+
+<p>トラックパッドカバーの保護紙をはがします。<br />
+<strong>トラックパッドカバーに表裏はありませんが、各面で触り心地が異なります。</strong><br />
+気に入った面を表側として扱ってください。</p>
+
+<p>裏側になる面一面に両面テープを貼り付けます。両面テープは重ねず、全面に貼るようにしてください。<br />
+隙間を開けるとそこだけ感度が変わる可能性があります。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3427.jpg" alt="トラックパッドカバーへの両面テープの貼り付け" /></p>
+
+<p>はみ出た部分をカッターなどで切り落とします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3430.jpg" alt="両面テープの切り落とし" /></p>
+
+<p>両面テープをはがし、トラックパッドに貼り付けます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3434.jpg" alt="トラックパッドカバーの貼り付け" /></p>
+
+<h4 id="pcbの取り付け">PCBの取り付け</h4>
+
+<p>PCBの表面がトップケース側に来るようにして、PCBをたわませながら、ホイールをトップケースの隙間に差し込みます。
+スイッチが干渉して作業しにくい場合は、一部のスイッチを外してください。
+また、無理に差し込まないでください。</p>
+
+<p>裏側から
+<img src="/assets/images/futaba_build_guide/DSCF3440.jpg" alt="PCBの取り付け" /></p>
+
+<p>表から</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3441.jpg" alt="PCBの取り付け" /></p>
+
+<p>フラットケーブルを外している場合、PCBに差し込みトラックパッドと接続します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3443.jpg" alt="フラットケーブルの取り付け" /></p>
+
+<p>タッピングビス(短)  を使い、 PCBをトップケースに固定します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3446.jpg" alt="PCBの固定" /></p>
+
+<h4 id="ケースの固定">ケースの固定</h4>
+
+<p>トップケースに固定されたPCBの上に、ボトムフォームをのせます。ボトムフォームは左右・表裏があるので注意してください。フォームの穴がソケットを避けるようにのせます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3448.jpg" alt="ボトムフォームの配置" /></p>
+
+<p>フォームの上からボトムケースを載せて、タッピングビス(長) を使って固定します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3450.jpg" alt="ボトムフォームの配置" /></p>
+
+<p>分解して再度組み立てる時には、タッピングビスで新たなネジ山を作らないように注意してください。
+一度タッピングビスでネジを切っている場合、最初は逆方向に回して、ネジが下に下がったところから正しい方向に回して締め付けます。こうすることで新たなネジ山を作ることなく締め付けることができます。</p>
+
+<h4 id="ゴム足の取り付け">ゴム足の取り付け</h4>
+
+<p>ボトムケースの六角形の凹みに合わせて、ゴム足を6箇所取り付けます。ゴム足取り付け後、表面の保護フィルムをはがしてください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3451.jpg" alt="ゴム足の貼り付け" /></p>
+
+<p>ケースが浮く場合は余ったゴム足を追加で貼り付けて調整してください。
+実際、ビルドガイドの撮影に使ったケースは歪みが多かったため、ケース下側に3枚、上側に2枚貼り付け、真ん中は貼り付けていません。</p>
+
+<p>ホイールクリックで筐体が動かないよう、少し粘着力が強いゴム足を使っています。
+グリップが強すぎて気になる場合は別のゴム足を調達してください。</p>
+
+<p>キットに付属のゴム足は、 <a href="https://amzn.asia/d/510jOX4">GRIPLUSの六角形のも</a>のです。</p>
+
+<h4 id="最終確認">最終確認</h4>
+
+<p>USBケーブルを差し込み、最終的な動作確認を行ってください。PCに接続しても認識しない場合は、USBケーブルが奥まで差し込まれているか確認してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3456.jpg" alt="PCBの固定" /></p>
+
+<p>USBケーブルを奥まで差し込んでいても認識しない場合は、PCBの位置を微調整してください。
+一度ボトムケースを開け、PCB固定用のネジを少し緩め固定位置を調整してください。</p>
+
+<p>ここまで来たら組み立て完了です。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3459.jpg" alt="Futaba完成" /></p>
+
+<h2 id="組み立てが終わったら">組み立てが終わったら</h2>
+
+<p><a href="/futaba/customize_guide">Futabaのカスタマイズ</a> ページを見ながら使いやすいようにカスタマイズしてください。</p>
+
+<p>出来上がった作品は <code class="language-plaintext highlighter-rouge">#futaba_kbd</code> タグをつけてSNSに投稿してください。<br />
+Futabaで楽しく快適な自作キーボードライフを過ごしてくださいね～</p>
+
+<hr />
+
+<h2 id="トラブルシューティング">トラブルシューティング</h2>
+
+<p>上手く動かない場合は以下のトラブルシューティングを参考に対応してください。<br />
+それでも解決しない場合は、作者まで連絡してください。解決できるようサポートします。</p>
+
+<h3 id="認識しないキーがある場合">認識しないキーがある場合</h3>
+<h4 id="特定のキー入力が認識されない場合">特定のキー入力が認識されない場合</h4>
+
+<p>キースイッチが正しくは嵌っていないか、ソケットが正しくはんだ付けできていない可能性が高いです。<br />
+キースイッチを刺し直しても改善しない場合は、ソケットのはんだ付けをやり直してください。</p>
+
+<h4 id="特定の行または列の入力が全て認識されない場合">特定の行または、列の入力が全て認識されない場合</h4>
+
+<p>RP2040-Zero が正しく接続されていない可能性があります。はんだ付けをやり直してください。</p>
+
+<h3 id="ホイールの回転でキー入力が発生しない場合">ホイールの回転でキー入力が発生しない場合</h3>
+
+<p>ロータリーエンコーダーが正しくはんだ付けできているか確認してください。<br />
+ロータリーエンコーダーのはんだ付けに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<h3 id="ホイールクリックで入力できない場合">ホイールクリックで入力できない場合</h3>
+
+<p>まず、クリッカーが正しく取り付けられているか確認してください。<br />
+正しく取り付けられていれば、ロータリーエンコーダーを押すことでマイクロスイッチの入力ができるはずです。</p>
+
+<p>次に、マイクロスイッチが正しくはんだ付けできているか確認してください。<br />
+マイクロスイッチのはんだ付けに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<h5 id="トラックパッドが反応しない場合">トラックパッドが反応しない場合</h5>
+
+<p>トラックパッド側とPCB側のフラットケーブルコネクタを確認し、ケーブルがまっすぐ奥まで差し込めているか確認してください。
+ケーブルに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<p>動作確認時に、ケースに載せていない場合、トラックパッド下の素材の影響を受ける場合があります。
+反応しない場合は手順通り、ケースに載せてから再度確認してください。</p>]]></content><author><name>geek-rabb1t</name></author><category term="build_guide" /><category term="Futaba" /><category term="Build Guide" /><summary type="html"><![CDATA[準備]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://geek-rabb1t.github.io/assets/images/futaba_build_guide/DSCF3446.jpg" /><media:content medium="image" url="https://geek-rabb1t.github.io/assets/images/futaba_build_guide/DSCF3446.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Futabaカスタマイズガイド</title><link href="https://geek-rabb1t.github.io/futaba/customize_guide" rel="alternate" type="text/html" title="Futabaカスタマイズガイド" /><published>2025-02-01T00:00:00+00:00</published><updated>2025-02-01T00:00:00+00:00</updated><id>https://geek-rabb1t.github.io/futaba/futaba-customize-guide</id><content type="html" xml:base="https://geek-rabb1t.github.io/futaba/customize_guide"><![CDATA[<h2 id="キーマップ">キーマップ</h2>
+
+<p>Vial上でカスタマイズできます。<br />
+デフォルトでは以下のキーマップになっています。
+で好きなように変更してください。</p>
+
+<h3 id="レイヤー0デフォルトレイヤー">レイヤー0(デフォルトレイヤー)</h3>
+
+<p><img src="/assets/images/futaba/customize/layer-0.jpg" alt="layer-0" /></p>
+
+<p>右側はトラックパッドの設定エリアです。
+<img src="/assets/images/futaba/customize/layer-0-1.jpg" width="500px" /></p>
+
+<h3 id="レイヤー1">レイヤー1</h3>
+
+<p><img src="/assets/images/futaba/customize/layer-1.jpg" alt="layer-1" /></p>
+
+<h3 id="レイヤー2">レイヤー2</h3>
+
+<p><img src="/assets/images/futaba/customize/layer-2.jpg" alt="layer-2" /></p>
+
+<h3 id="カスタムキーコード">カスタムキーコード</h3>
+
+<p>Userタブにカスタムキーコードを用意しています。<br />
+実際に機能するものは一部で、大半はトラックパッドの設定用です。</p>
+
+<p><img src="/assets/images/futaba/customize/custom-keycode.jpg" alt="layer-1" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>キー</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CHi</td>
+      <td>このキーを押している間、カーソルの移動速度が2倍になります。</td>
+    </tr>
+    <tr>
+      <td>CLw</td>
+      <td>このキーを押している間、カーソルの移動速度が半分になります。</td>
+    </tr>
+    <tr>
+      <td>Scroll Mode</td>
+      <td>このキーを押している間はカーソル移動の代わりにスクロールします。 \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td><code class="language-plaintext highlighter-rouge">Scroll Only</code> が <code class="language-plaintext highlighter-rouge">ON</code>　の場合は、スクロールの代わりにカーソル移動します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code></td>
+      <td>トラックパッドの数値項目の設定に使用します。設定以外には使用できません。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>トラックパッドの機能の有効、無効を設定します。設定以外には使用できません。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">R0</code> - <code class="language-plaintext highlighter-rouge">R270</code></td>
+      <td>Futabaでは使用しません。</td>
+    </tr>
+    <tr>
+      <td>それ以外</td>
+      <td>設定項目のラベル表示用です。設定以外に使用できません。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="トラックパッド">トラックパッド</h2>
+
+<p>Vial上でカスタマイズできます。<br />
+一部の項目はレイヤー0(デフォルトレイヤー) でのみ設定可能です。</p>
+
+<p>タップやスワイプジェスチャの挙動に加え、カーソル速度やスクロール速度などを設定可能です。</p>
+
+<h3 id="カーソルに関する設定">カーソルに関する設定</h3>
+
+<p>レイヤー0(デフォルトレイヤー) で設定します。<br />
+他のレイヤーに設定しても機能しないので注意してください。</p>
+
+<p><img src="/assets/images/futaba/customize/layer-0-1-cursor.jpg" width="500px" /></p>
+
+<p>項目ごとに決まったキーコードのみ指定可能です。
+無効なキーコードが指定された場合は初期値を使います。</p>
+
+<p>この項目はキーボードを再接続するまで反映されません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>指定可能な値</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>カーソル速度</td>
+      <td>Cursor Speed</td>
+      <td><code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Val 5</code></td>
+      <td>カーソルの移動速度を設定します。数値が大きいほど速くなります。</td>
+    </tr>
+    <tr>
+      <td>カーソルの加速</td>
+      <td>Cursor Acceleration</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>カーソルの加速有無を設定します。</td>
+    </tr>
+    <tr>
+      <td>慣性カーソル</td>
+      <td>Inertia Cursor</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>カーソル移動中に指を離したときにそのままカーソルを移動するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>カーソル補正</td>
+      <td>Cursor Correction</td>
+      <td><code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Val 2</code></td>
+      <td>カーソル補正の強さを設定します。 \</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>|</td>
+      <td>|</td>
+      <td>|</td>
+      <td>数値を大きくすると補正が強くなりますが、遅延が大きくなります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="スクロールに関する設定">スクロールに関する設定</h3>
+
+<p>レイヤー0(デフォルトレイヤー) で設定します。
+他のレイヤーに設定しても機能しないので注意してください。</p>
+
+<p><img src="/assets/images/futaba/customize/layer-0-1-scroll.jpg" width="500px" /></p>
+
+<p>項目ごとに決まったキーコードのみ指定可能です。
+無効なキーコードが指定された場合は初期値を使います。</p>
+
+<p>この項目はキーボードを再接続するまで反映されません。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>指定可能な値</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>スクロール速度</td>
+      <td>Scroll Speed</td>
+      <td><code class="language-plaintext highlighter-rouge">Val 1</code> - <code class="language-plaintext highlighter-rouge">Val 9</code></td>
+      <td><code class="language-plaintext highlighter-rouge">Val 4</code></td>
+      <td>スクロール速度を設定します。数値が大きいほど速くなります。</td>
+    </tr>
+    <tr>
+      <td>垂直スクロールの反転</td>
+      <td>Reverse Vertical Scroll</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>垂直方向のスクロールを反転するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>水平スクロールの反転</td>
+      <td>Reverse Horizontal Scroll</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>水平方向のスクロールを反転するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>慣性スクロール</td>
+      <td>Inertia Scroll</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code></td>
+      <td>スクロール中に指を離したときにそのままスクロールを継続するかどうか設定します。</td>
+    </tr>
+    <tr>
+      <td>スクロールのみ</td>
+      <td>Scroll Only</td>
+      <td><code class="language-plaintext highlighter-rouge">ON</code>, <code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td><code class="language-plaintext highlighter-rouge">OFF</code></td>
+      <td>ONにすると、カーソル移動が無効になりスクロールのみになります。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="タップ">タップ</h3>
+
+<p>レイヤーごとに個別の設定が可能です。<br />
+1本指から4本指までのタップ挙動を設定できます。</p>
+
+<p><img src="/assets/images/futaba/customize/layer-0-1-tap.jpg" width="500px" /></p>
+
+<p>デフォルトは以下の設定になっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>Vial上の表示</th>
+      <th>初期値</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1本指タップ</td>
+      <td>One Finger Tap</td>
+      <td>Mouse1</td>
+      <td>左クリック</td>
+    </tr>
+    <tr>
+      <td>2本指タップ</td>
+      <td>Two Finger Tap</td>
+      <td>Mouse2</td>
+      <td>右クリック</td>
+    </tr>
+    <tr>
+      <td>3本指タップ</td>
+      <td>Three Finger Tap</td>
+      <td>Mouse3</td>
+      <td>ホイールクリック</td>
+    </tr>
+    <tr>
+      <td>4本指タップ</td>
+      <td>Four Finger Tap</td>
+      <td>Win + S</td>
+      <td>検索機能へのショートカット</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="スワイプジェスチャ">スワイプジェスチャ</h3>
+
+<p>レイヤーごとに個別の設定が可能です。<br />
+3本指、4本指のスワイプジェスチャの挙動を設定できます。</p>
+
+<h4 id="3本指">3本指</h4>
+
+<p><img src="/assets/images/futaba/customize/layer-0-3finger.jpg" alt="layer-0-3finger" /></p>
+
+<p>デフォルトでは以下のキーバインドになっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>スワイプ方向</th>
+      <th>イメージ</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上</td>
+      <td>&lt;img src="/assets/images/futaba/customize/3finger-up.jpg" width="200px"&gt;</td>
+      <td>タスクビュー(Win + Tab)</td>
+    </tr>
+    <tr>
+      <td>下</td>
+      <td>&lt;img src="/assets/images/futaba/customize/3finger-down.jpg" width="200px"&gt;</td>
+      <td>デスクトップ表示(Win + D)</td>
+    </tr>
+    <tr>
+      <td>左</td>
+      <td>&lt;img src="/assets/images/futaba/customize/3finger-left.jpg" width="200px"&gt;</td>
+      <td>ブラウザの戻る(マウスのボタン4)</td>
+    </tr>
+    <tr>
+      <td>右</td>
+      <td>&lt;img src="/assets/images/futaba/customize/3finger-right.jpg" width="200px"&gt;</td>
+      <td>ブラウザの進む(マウスのボタン5)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="4本指">4本指</h4>
+
+<p><img src="/assets/images/futaba/customize/layer-0-4finger.jpg" alt="layer-0-4finger" /></p>
+
+<p>デフォルトでは以下のキーバインドになっています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>スワイプ方向</th>
+      <th>イメージ</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上</td>
+      <td>&lt;img src="/assets/images/futaba/customize/4finger-up.jpg" width="200px"&gt;</td>
+      <td>タスクビュー(Win + Tab)</td>
+    </tr>
+    <tr>
+      <td>下</td>
+      <td>&lt;img src="/assets/images/futaba/customize/4finger-down.jpg" width="200px"&gt;</td>
+      <td>デスクトップ表示(Win + D)</td>
+    </tr>
+    <tr>
+      <td>左</td>
+      <td>&lt;img src="/assets/images/futaba/customize/4finger-left.jpg" width="200px"&gt;</td>
+      <td>左のデスクトップへ移動(Win + Ctrl + ←)</td>
+    </tr>
+    <tr>
+      <td>右</td>
+      <td>&lt;img src="/assets/images/futaba/customize/4finger-right.jpg" width="200px"&gt;</td>
+      <td>右のデスクトップへ移動(Win + Ctrl + →)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="オリジナルファームウェアの作成">オリジナルファームウェアの作成</h2>
+
+<p>Futabaのファームウェアのソースは以下のリポジトリにあります。<br />
+ライセンスの範囲であれば、自由に改変してかまいません。</p>
+
+<p><a href="https://github.com/geek-rabb1t/vial-qmk/tree/gr_master/keyboards/geek_rabb1t/futaba">https://github.com/geek-rabb1t/vial-qmk/tree/gr_master/keyboards/geek_rabb1t/futaba</a></p>
+
+<h3 id="ファームウェアの書き込み方法">ファームウェアの書き込み方法</h3>
+
+<p>一度、PCから切断し、Futabaの裏側に空いている穴をシャープペンシル等で押しながらUSBケーブルを接続してください。</p>
+
+<p><img src="/assets/images/futaba/DSCF3451_1.jpg" alt="ファームウェア書き込みモードへの移行" /></p>
+
+<p>ストレージデバイスとして認識するので、ファームウェアをドラッグドロップして書き込んでください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_1.png" alt="ファームウェアの書き込み" /></p>
+
+<h2 id="ホイールを軽くする">ホイールを軽くする</h2>
+
+<p>使用するロータリーエンコーダーを変更することでホイールの操作を軽くすることができます。<br />
+遊舎工房さん等で取り扱いのある<a href="https://shop.yushakobo.jp/products/2141">低トルクタイプのロータリーエンコーダー(EC12E2440301)</a>が対応品です。</p>]]></content><author><name>geek-rabb1t</name></author><category term="customize" /><category term="Futaba" /><category term="Customize Guide" /><summary type="html"><![CDATA[キーマップ]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://geek-rabb1t.github.io/assets/images/futaba/DSCF3466_1.jpg" /><media:content medium="image" url="https://geek-rabb1t.github.io/assets/images/futaba/DSCF3466_1.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

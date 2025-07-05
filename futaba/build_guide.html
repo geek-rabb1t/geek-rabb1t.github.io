@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Futabaビルドガイド | うさきーぼー堂の裏側</title>
+<meta name="generator" content="Jekyll v4.3.4">
+<meta property="og:title" content="Futabaビルドガイド">
+<meta name="author" content="geek-rabb1t">
+<meta property="og:locale" content="ja">
+<meta name="description" content="準備">
+<meta property="og:description" content="準備">
+<link rel="canonical" href="https://geek-rabb1t.github.io/futaba/build_guide">
+<meta property="og:url" content="https://geek-rabb1t.github.io/futaba/build_guide">
+<meta property="og:site_name" content="うさきーぼー堂の裏側">
+<meta property="og:image" content="https://geek-rabb1t.github.io/assets/images/futaba_build_guide/DSCF3446.jpg">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-02-01T00:00:01+00:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="https://geek-rabb1t.github.io/assets/images/futaba_build_guide/DSCF3446.jpg">
+<meta property="twitter:title" content="Futabaビルドガイド">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"geek-rabb1t"},"dateModified":"2025-02-01T00:00:01+00:00","datePublished":"2025-02-01T00:00:01+00:00","description":"準備","headline":"Futabaビルドガイド","image":"https://geek-rabb1t.github.io/assets/images/futaba_build_guide/DSCF3446.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://geek-rabb1t.github.io/futaba/build_guide"},"url":"https://geek-rabb1t.github.io/futaba/build_guide"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="/assets/images/logo.svg">
+  <link rel="canonical" href="https://geek-rabb1t.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/linkpreview.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://geek-rabb1t.github.io/feed.xml" title="うさきーぼー堂の裏側">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji):not(.ogp-image)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="うさきーぼー堂の裏側" src="/assets/images/logo.svg" onerror="this.style.display='none'">
+  うさきーぼー堂の裏側
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/">HOME</a><a class="page-link" href="/works/index.html">WORKS</a><a class="page-link" href="/build_guide/index.html">BUILD GUIDE</a><a class="page-link" href="/posts/index.html">POSTS</a><a class="page-link" href="/about">ABOUT</a>
+
+
+
+
+
+
+
+
+
+<div class="page-link" style="display: inline;">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<div class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ja',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+</div>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3) 120px, rgba(0, 0, 0, 0.2) 240px),url(/assets/images/futaba_build_guide/DSCF3446.jpg)"></div>
+        <img class="img-placeholder" src="/assets/images/futaba_build_guide/DSCF3446.jpg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner">
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Futabaビルドガイド</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2025-02-01T00:00:01+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-02-01
+    </time>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 25 mins</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#Futaba">#Futaba</a><a class="post-tag" href="/tags.html#Build%20Guide">#Build Guide</a>
+</div></header>
+</div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <h2 id="準備">準備</h2>
+
+<p>組み立て前に同梱物や追加で必要な部品、必要な工具を確認してください。</p>
+
+<h3 id="内容物の確認">内容物の確認</h3>
+
+<p>全ての写真はクリックして拡大可能できます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>分類</th>
+      <th>部品</th>
+      <th style="text-align: right">同梱数</th>
+      <th>写真</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">ケース
+<br>
+</td>
+      <td>トップケース</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3283.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>ボトムケース</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3285.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      <td rowspan="2">フォーム
+<br>
+</td>
+      <td>トップフォーム (右・中・左)</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3290.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>ボトムフォーム (右・中・左)</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3292.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      <td>PCB</td>
+      <td>メインPCB</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3281.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      <td rowspan="7">電子部品
+<br><br><br><br><br><br>
+</td>
+      <td>トラックパッドモジュール</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3294_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>chocソケット</td>
+      <td style="text-align: right">49</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3313_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>ロータリーエンコーダー(型番: EC12E2420301)</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3307_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>マイコンボード (型番: RP2040-Zero)</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3295_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>マイクロスイッチ</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3318_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>フラットケーブル (0.5mmピッチ6ピン  )</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3330.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>ピンヘッダ (2.54mmピッチ40ピン  )</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3346.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      <td rowspan="6">部品
+<br><br><br><br><br>
+</td>
+      <td>クリッカー</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3305_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>ホイール</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3296_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>トラックパッドカバー (マット黒アクリル)</td>
+      <td style="text-align: right">1</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3320_1.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>タッピングビス(短)  - M3 長さ6mm</td>
+      <td style="text-align: right">2</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3321_2.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>タッピングビス(長)  - M3 長さ8mm</td>
+      <td style="text-align: right">6</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3321_3.jpg" width="100px"></td>
+    </tr>
+    <tr>
+      
+      <td>ゴム足</td>
+      <td style="text-align: right">10</td>
+      <td><img src="/assets/images/futaba_build_guide/DSCF3586.jpg" width="100px"></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="自分で用意するもの">自分で用意するもの</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>部品</th>
+      <th>必要数</th>
+      <th>補足</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kailh ChocV1もしくは、Kailh ChocV2スイッチ</td>
+      <td>49</td>
+      <td>ChocV2互換のLofree Ghost等、 Kailh x Lofree Low-profileスイッチも対応</td>
+    </tr>
+    <tr>
+      <td>Low Profile対応1Uサイズキーキャップ</td>
+      <td>49</td>
+      <td>ChocV1とChocV2で軸の形が違うので間違えて買わないよう注意</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>ぎーくらびっとのおススメスイッチ</p>
+<ul>
+  <li><a href="https://talpkeyboard.net/items/66a056514c088e035d0344b3">Kailh Deep Sea Silent MINI ロープロファイルスイッチ Islet</a></li>
+  <li><a href="https://talpkeyboard.net/items/66a0596a545dc7002b5dea18">Kailh Deep Sea Silent MINI ロープロファイルスイッチ Whale</a></li>
+  <li><a href="https://lofree.co.jp/products/ghost-low-profile-pom-switches?variant=50487412556007">Kailh x Lofree Ghost</a></li>
+</ul>
+
+<p>確認済みキーキャップ</p>
+<ul>
+  <li><a href="https://talpkeyboard.net/?category_id=66e79046a6782d33e6380dab">Tai-Hao Thins</a></li>
+  <li><a href="https://amzn.asia/d/cjRH1xz">XVXロープロファイルキーキャップ</a></li>
+</ul>
+
+<h2 id="組み立てに必要な工具や道具">組み立てに必要な工具や道具</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>道具</th>
+      <th>用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>はんだごて</td>
+      <td>部品のはんだ付けに使用</td>
+    </tr>
+    <tr>
+      <td>はんだ</td>
+      <td>部品のはんだ付けに使用</td>
+    </tr>
+    <tr>
+      <td>ニッパー</td>
+      <td>はみ出したピンヘッダの切り落としに使用</td>
+    </tr>
+    <tr>
+      <td>No.1(PH1)サイズのプラスドライバー
+<br>
+</td>
+      <td>ケースのねじ止めに使用
+<br>
+ビット交換式等、極端に短いドライバーだとネジに届かない場合があります。</td>
+    </tr>
+    
+    <tr>
+      <td>逆作用ピンセット</td>
+      <td>はんだ付け中の部品を固定するのに使用</td>
+    </tr>
+    <tr>
+      <td>両面テープ
+<br><br>
+</td>
+      <td>トラックパッドの固定に使用
+<br>
+クッションのない薄い両面テープを使用してください。
+<br>
+0.16mm厚 の、 <code class="language-plaintext highlighter-rouge">ニトムズ はがせる 両面テープ 強力接着用</code> を推奨</td>
+    </tr>
+    
+    
+  </tbody>
+</table>
+
+<h2 id="組み立て手順">組み立て手順</h2>
+
+<p>まず、PCBの表裏について説明します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>面</th>
+      <th>実装前</th>
+      <th>実装後</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>表
+<br>
+</td>
+      <td>
+<img src="/assets/images/futaba_build_guide/DSCF3282.jpg" width="200px">
+<br>
+</td>
+      <td>
+<img src="/assets/images/futaba_build_guide/DSCF3382.jpg" width="200px">
+<br>
+</td>
+      <td>表面はキースイッチをはめる面です。
+<br>
+マイクロスイッチとロータリーエンコーダーを実装します。</td>
+    </tr>
+    
+    <tr>
+      <td>裏
+<br>
+</td>
+      <td>
+<img src="/assets/images/futaba_build_guide/DSCF3281.jpg" width="200px">
+<br>
+</td>
+      <td>
+<img src="/assets/images/futaba_build_guide/DSCF3385.jpg" width="200px">
+<br>
+</td>
+      <td>Futabaと印刷されています。
+<br>
+一部の部品は実装済みです。</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h3 id="電子部品のはんだ付け">電子部品のはんだ付け</h3>
+
+<h4 id="chocソケットの取り付け">chocソケットの取り付け</h4>
+
+<p>PCBの裏面で作業します。</p>
+
+<p>chocソケットには向きがあります。向きを間違えるとスイッチが外れやすくなったり、キー入力できない場合があります。ソケットの向きを間違えないように注意してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3334.jpg" alt="ソケットの向き"></p>
+
+<p>また、PCBが薄いためchocソケットがPCBからはみ出します。そのため、一つ一つ、逆作用ピンセットで抑えながらはんだ付けしてください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3342.jpg" alt="逆作用ピンセットで抑える"></p>
+
+<p>ピンセットで固定するため以下の順番に作業してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3385_1.jpg" alt="はんだ付け順"></p>
+
+<h4 id="マイコンボードrp2040-zeroの取り付け">マイコンボード(RP2040-Zero)の取り付け</h4>
+
+<p><strong>ファームウェアの書き込み</strong></p>
+
+<p>はんだ付け前にマイコンにファームウェアを書き込みます。</p>
+
+<p>マイコンにUSBケーブルを接続し、PCと接続します。<br>
+ストレージデバイスとして認識するので、リンク先からダウンロードしたファームウェアをコピーします。</p>
+
+<p>ビルド済みファームウェアへのリンク:<br>
+<a href="https://github.com/geek-rabb1t/futaba/raw/refs/heads/master/firmware/geek_rabb1t_futaba_vial.uf2">https://github.com/geek-rabb1t/futaba/raw/refs/heads/master/firmware/geek_rabb1t_futaba_vial.uf2</a></p>
+
+<p>ストレージとして認識しない場合、RESETとBOOTボタンを同時に押してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_1.png" alt="ファームウェアの書き込み"></p>
+
+<p><strong>マイコンのはんだ付け手順</strong></p>
+
+<p>キット付属のピンヘッダを写真のように切り分けます。<br>
+ニッパーで切ってもいいですが、基板にピンヘッダを差し込んで手で折るのが簡単です。</p>
+
+<p>切り分けた後のピンヘッダ</p>
+
+<ul>
+  <li>9本足： 2個</li>
+  <li>5本足： 1個</li>
+</ul>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3347.jpg" alt="切り取り後のピンヘッダ"></p>
+
+<p>PCBの裏面にRP2040-Zeroに切り分けたピンヘッダーを差し込み、その上にRP2040-Zeroを載せます。<br>
+写真のように、USBコネクタの実装面が見えるように差し込みます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3348.jpg" alt="マイコンの固定"></p>
+
+<p>逆作用ピンセットでにRP2040-Zeroを抑えながら、PCBからはみ出た四隅のピンをニッパーで切ります。
+ニッパーで切り落としたら、四隅だけはんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3360.jpg" alt="はみ出しを切り落とす"></p>
+
+<p>RP2040-Zero からはみ出たピンも同じようにニッパーで切り落としはんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3365.jpg" alt="四隅のはんだ付け後"></p>
+
+<p>これでPCBとRP2040-Zeroが固定されるので、逆作用ピンセットは外してかまいません。<br>
+PCB側の残りのピンを全て切り取り、はんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3367.jpg" alt="PCB側のマイコンはんだ付け後"></p>
+
+<p>RP2040-Zeroも同様にはみ出たピンを全て切り取り、はんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3370.jpg" alt="マイコンはんだ付け後"></p>
+
+<h4 id="マイクロスイッチの取り付け">マイクロスイッチの取り付け</h4>
+
+<p><strong>ここから部品を配置する面が変わります。</strong><br>
+<strong>間違えないよう注意してください。</strong></p>
+
+<p>PCBの表面にマイクロスイッチを差し込みます。
+マイクロスイッチを逆作用ピンセットで抑えた状態ではみ出た足をニッパーで切り取ります。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3371.jpg" alt="マイクロスイッチの固定"></p>
+
+<p>ピンセットで固定したままはんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3374.jpg" alt="マイクロスイッチのはんだ付け"></p>
+
+<h4 id="ロータリーエンコーダーの取り付け">ロータリーエンコーダーの取り付け</h4>
+
+<p>PCBの表側からロータリーエンコーダーを差し込みます。
+PCBからはみ出した細い3本の足をニッパーで切り取ります。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3377.jpg" alt="ロータリーエンコーダの固定"></p>
+
+<p>ニッパーで切り取った足をはんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3378.jpg" alt="ロータリーエンコーダのはんだ付け"></p>
+
+<p>2本の太い足を切り取り、はんだ付けします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3393.jpg" alt="ロータリーエンコーダの足のはんだ付け"></p>
+
+<p>はんだ付けは以上となります。</p>
+
+<h3 id="各種部品の取り付け">各種部品の取り付け</h3>
+
+<h4 id="スイッチの取り付け">スイッチの取り付け</h4>
+
+<p>PCBの表面の上にトップフォームを重ねます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3387.jpg" alt="フォームを重ねる"></p>
+
+<p>上からスイッチをはめ込みます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3389.jpg" alt="ロータリーエンコーダのはんだ付け"></p>
+
+<h4 id="クリッカーの取り付け">クリッカーの取り付け</h4>
+
+<p>PCBの表面のからクリッカーをはめます。
+写真の赤枠部分をつぶすようにつまみながら、下に押し込みます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3392.jpg" alt="クリッカーの取り付け"></p>
+
+<p>取り外すときは、同じようにつまみながら引き抜きます。</p>
+
+<h4 id="ホイールの取り付け">ホイールの取り付け</h4>
+
+<p>クリッカーが取り付け済みであることを確認してから、エンコーダーにホイールを取り付けます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3397.jpg" alt="ホイールの取り付け"></p>
+
+<p>この時点ではまだトラックパッドは取り付けません。</p>
+
+<h3 id="vial-の起動">Vial の起動</h3>
+
+<p>Chrome等WebHIDに対応したブラウザの場合、 以下のURLにアクセスして ブラウザ版のアプリを起動します。</p>
+
+<p><a href="https://vial.rocks/">https://vial.rocks/</a></p>
+
+<p><code class="language-plaintext highlighter-rouge">Start Vial</code> ボタンが表示される場合、そのままボタンを押して、 Vialを開始します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_2.png" alt="Start Vial"></p>
+
+<p>このようなダイアログが表示されたら、<code class="language-plaintext highlighter-rouge">Futaba</code> を選択します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_3.png" alt="ペアリング"></p>
+
+<p>ボタンが表示されない場合はWebHID非対応ブラウザなので、デスクトップアプリを使用してください。<br>
+非対応ブラウザの場合は以下のURLから <code class="language-plaintext highlighter-rouge">Download Vial</code> を選んで、デスクトップアプリをインストールできます。</p>
+
+<p><a href="https://get.vial.today/">https://get.vial.today/</a></p>
+
+<p>ここでは利用者の多そうなブラウザ版で説明します。
+デスクトップ版も同じ操作です。</p>
+
+<h3 id="キー入力とホイールの動作確認">キー入力とホイールの動作確認</h3>
+
+<p>まず、マイコンにUSBケーブルを刺し、PCに接続します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3398.jpg" alt="ロック解除"></p>
+
+<p>Vialを起動します。</p>
+
+<p>Matrix testerタブを選択し、右下のunlockボタンを押します。<br>
+以下のダイアログが表示されたら左上と右上のキーを押しながらロックを解除します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_5.png" alt="ロック解除画面"></p>
+
+<p>Vialのロック解除は赤枠の2キーを長押しします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3389_1.jpg" alt="ロック解除で押すキー"></p>
+
+<h4 id="各キーの動作確認">各キーの動作確認</h4>
+
+<p>全部のキーを入力し、正しく入力できるか確認してください。</p>
+
+<p>ロータリーエンコーダーの回転とトラックパッドの入力はテストできないので、下のスクリーンショットの状態になったらOKです。</p>
+
+<p><img src="/assets/images/futaba_build_guide/screenshot_7.png" alt="キー入力確認"></p>
+
+<p>初期状態では、トラックパッド上の真ん中のキーには <code class="language-plaintext highlighter-rouge">F5</code> キーを割り当てています。<br>
+ブラウザ版のVialを使っている場合、このキーを押すとページの再読み込みが発生します。
+ここでは動作確認したいだけなので、ページの再読み込みをもって入力できたと判断してもらって構いません。</p>
+
+<p>上手く動かない場合、ページ下部の<a href="#%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">トラブルシューティング</a> を参考に対応してください。</p>
+
+<h4 id="ホイールの動作確認">ホイールの動作確認</h4>
+
+<p>ホイールの回転とホイールクリックで入力が発生するか確認してください。</p>
+
+<p>ホイールクリックは、通常のキー入力と同じように Matrix testerで確認できます。</p>
+
+<p>ホイールの回転には、カーソルの上キーと下キーが割り当てられています。<br>
+テキストエディタなどでカーソルが上下に移動するか確認してください。</p>
+
+<p>上手く動かない場合、ページ下部の<a href="#%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">トラブルシューティング</a> を参考に対応してください。</p>
+
+<h4 id="トラックパッドの取り付けと動作確認">トラックパッドの取り付けと動作確認</h4>
+
+<p><strong>始めに、マイコンからUSBケーブルを抜きます。</strong><br>
+トラックパッド裏面（部品が実装済みの面）のFFCコネクタの黒い部分をトラックパッドと平行に引っ張り、ロックを解除します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3403.jpg" alt="FFCコネクタのロック解除"></p>
+
+<p>フラットケーブルの青い面を上にして、フラットケーブルをまっすぐ差し込みます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3406.jpg" alt="フラットケーブルを差し込む"></p>
+
+<p>FFCコネクタの黒い部分を押し込み、ロックします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3409.jpg" alt="コネクタのロック"></p>
+
+<p>トラックパッドをトップケースの上に載せます。
+この時点では固定しません。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3410.jpg" alt="ケースに置く"></p>
+
+<p>トラックパッドと同様の手順でフラットケーブルをPCBに接続します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3482.jpg" alt="PCB側のフラットケーブル接続"></p>
+
+<p>トラックパッドの上にトラックパッドカバー（マットアクリル板）を載せます。<br>
+この時点では仮固定なので、どちらを上に向けてもかまいません。
+PCBにUSBケーブルを差し込みます。　</p>
+
+<p>トラックパッド上で指を動かし、カーソルが動くか確認してください。<br>
+この時点では仮固定の状態なのでカーソルの反応が悪い可能性があります。<br>
+反応すれば問題ないので、次の手順に進んでください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3418.jpg" alt="ドラックパッドの動作確認"></p>
+
+<p>上手く動かない場合、ページ下部の<a href="#%E3%83%88%E3%83%A9%E3%83%96%E3%83%AB%E3%82%B7%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">トラブルシューティング</a> を参考に対応してください。</p>
+
+<h3 id="ケースへの組み込み">ケースへの組み込み</h3>
+
+<h4 id="トラックパッドの固定">トラックパッドの固定</h4>
+
+<p>トラックパッド裏側に両面テープを貼ります。<br>
+作業の邪魔になる場合は一度フラットケーブルを外してください。<br>
+写真のように、白いシルクに沿って縦に貼り付けて下さい。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3421.jpg" alt="両面テープの貼り付け"></p>
+
+<p>トラックパッドからはみ出る部分はカッターなどで切り落とします。
+<img src="/assets/images/futaba_build_guide/DSCF3422.jpg" alt="はみ出た個所を切り落とす"></p>
+
+<p>フラットケーブル外している場合は、ここで取り付けます。</p>
+
+<p>両面テープの剥離紙をはがし、トラックパッドをトップケースに固定します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3432.jpg" alt="ケースへの固定"></p>
+
+<h4 id="トラックパッドカバーの固定">トラックパッドカバーの固定</h4>
+
+<p>トラックパッドカバーの保護紙をはがします。<br>
+<strong>トラックパッドカバーに表裏はありませんが、各面で触り心地が異なります。</strong><br>
+気に入った面を表側として扱ってください。</p>
+
+<p>裏側になる面一面に両面テープを貼り付けます。両面テープは重ねず、全面に貼るようにしてください。<br>
+隙間を開けるとそこだけ感度が変わる可能性があります。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3427.jpg" alt="トラックパッドカバーへの両面テープの貼り付け"></p>
+
+<p>はみ出た部分をカッターなどで切り落とします。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3430.jpg" alt="両面テープの切り落とし"></p>
+
+<p>両面テープをはがし、トラックパッドに貼り付けます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3434.jpg" alt="トラックパッドカバーの貼り付け"></p>
+
+<h4 id="pcbの取り付け">PCBの取り付け</h4>
+
+<p>PCBの表面がトップケース側に来るようにして、PCBをたわませながら、ホイールをトップケースの隙間に差し込みます。
+スイッチが干渉して作業しにくい場合は、一部のスイッチを外してください。
+また、無理に差し込まないでください。</p>
+
+<p>裏側から
+<img src="/assets/images/futaba_build_guide/DSCF3440.jpg" alt="PCBの取り付け"></p>
+
+<p>表から</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3441.jpg" alt="PCBの取り付け"></p>
+
+<p>フラットケーブルを外している場合、PCBに差し込みトラックパッドと接続します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3443.jpg" alt="フラットケーブルの取り付け"></p>
+
+<p>タッピングビス(短)  を使い、 PCBをトップケースに固定します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3446.jpg" alt="PCBの固定"></p>
+
+<h4 id="ケースの固定">ケースの固定</h4>
+
+<p>トップケースに固定されたPCBの上に、ボトムフォームをのせます。ボトムフォームは左右・表裏があるので注意してください。フォームの穴がソケットを避けるようにのせます。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3448.jpg" alt="ボトムフォームの配置"></p>
+
+<p>フォームの上からボトムケースを載せて、タッピングビス(長) を使って固定します。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3450.jpg" alt="ボトムフォームの配置"></p>
+
+<p>分解して再度組み立てる時には、タッピングビスで新たなネジ山を作らないように注意してください。
+一度タッピングビスでネジを切っている場合、最初は逆方向に回して、ネジが下に下がったところから正しい方向に回して締め付けます。こうすることで新たなネジ山を作ることなく締め付けることができます。</p>
+
+<h4 id="ゴム足の取り付け">ゴム足の取り付け</h4>
+
+<p>ボトムケースの六角形の凹みに合わせて、ゴム足を6箇所取り付けます。ゴム足取り付け後、表面の保護フィルムをはがしてください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3451.jpg" alt="ゴム足の貼り付け"></p>
+
+<p>ケースが浮く場合は余ったゴム足を追加で貼り付けて調整してください。
+実際、ビルドガイドの撮影に使ったケースは歪みが多かったため、ケース下側に3枚、上側に2枚貼り付け、真ん中は貼り付けていません。</p>
+
+<p>ホイールクリックで筐体が動かないよう、少し粘着力が強いゴム足を使っています。
+グリップが強すぎて気になる場合は別のゴム足を調達してください。</p>
+
+<p>キットに付属のゴム足は、 <a href="https://amzn.asia/d/510jOX4">GRIPLUSの六角形のも</a>のです。</p>
+
+<h4 id="最終確認">最終確認</h4>
+
+<p>USBケーブルを差し込み、最終的な動作確認を行ってください。PCに接続しても認識しない場合は、USBケーブルが奥まで差し込まれているか確認してください。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3456.jpg" alt="PCBの固定"></p>
+
+<p>USBケーブルを奥まで差し込んでいても認識しない場合は、PCBの位置を微調整してください。
+一度ボトムケースを開け、PCB固定用のネジを少し緩め固定位置を調整してください。</p>
+
+<p>ここまで来たら組み立て完了です。</p>
+
+<p><img src="/assets/images/futaba_build_guide/DSCF3459.jpg" alt="Futaba完成"></p>
+
+<h2 id="組み立てが終わったら">組み立てが終わったら</h2>
+
+<p><a href="/futaba/customize_guide">Futabaのカスタマイズ</a> ページを見ながら使いやすいようにカスタマイズしてください。</p>
+
+<p>出来上がった作品は <code class="language-plaintext highlighter-rouge">#futaba_kbd</code> タグをつけてSNSに投稿してください。<br>
+Futabaで楽しく快適な自作キーボードライフを過ごしてくださいね～</p>
+
+<hr>
+
+<h2 id="トラブルシューティング">トラブルシューティング</h2>
+
+<p>上手く動かない場合は以下のトラブルシューティングを参考に対応してください。<br>
+それでも解決しない場合は、作者まで連絡してください。解決できるようサポートします。</p>
+
+<h3 id="認識しないキーがある場合">認識しないキーがある場合</h3>
+<h4 id="特定のキー入力が認識されない場合">特定のキー入力が認識されない場合</h4>
+
+<p>キースイッチが正しくは嵌っていないか、ソケットが正しくはんだ付けできていない可能性が高いです。<br>
+キースイッチを刺し直しても改善しない場合は、ソケットのはんだ付けをやり直してください。</p>
+
+<h4 id="特定の行または列の入力が全て認識されない場合">特定の行または、列の入力が全て認識されない場合</h4>
+
+<p>RP2040-Zero が正しく接続されていない可能性があります。はんだ付けをやり直してください。</p>
+
+<h3 id="ホイールの回転でキー入力が発生しない場合">ホイールの回転でキー入力が発生しない場合</h3>
+
+<p>ロータリーエンコーダーが正しくはんだ付けできているか確認してください。<br>
+ロータリーエンコーダーのはんだ付けに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<h3 id="ホイールクリックで入力できない場合">ホイールクリックで入力できない場合</h3>
+
+<p>まず、クリッカーが正しく取り付けられているか確認してください。<br>
+正しく取り付けられていれば、ロータリーエンコーダーを押すことでマイクロスイッチの入力ができるはずです。</p>
+
+<p>次に、マイクロスイッチが正しくはんだ付けできているか確認してください。<br>
+マイクロスイッチのはんだ付けに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<h5 id="トラックパッドが反応しない場合">トラックパッドが反応しない場合</h5>
+
+<p>トラックパッド側とPCB側のフラットケーブルコネクタを確認し、ケーブルがまっすぐ奥まで差し込めているか確認してください。
+ケーブルに問題がない場合は、RP2040-Zero のはんだ付けを確認してください。</p>
+
+<p>動作確認時に、ケースに載せていない場合、トラックパッド下の素材の影響を受ける場合があります。
+反応しない場合は手順通り、ケースに載せてから再度確認してください。</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/futaba/customize_guide" title="Futabaカスタマイズガイド">Futabaカスタマイズガイド</a><a class="next" href="/futaba" title="Futaba">Futaba</a>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li class="">
+          <a class="post-link" href="/grt65-expkit/build_guide" title="GR-Trackpad65 実験キット ビルドガイド">
+            GR-Trackpad65 実験キット ビルドガイド<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/grt65-expkit" title="GR-Trackpad65 実験キット">
+            GR-Trackpad65 実験キット<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/keyket2025" title="キーケット2025　お品書き">
+            キーケット2025　お品書き<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+<li class="">
+          <a class="post-link" href="/futaba/build_guide" title="Futabaビルドガイド">
+            Futabaビルドガイド<span class="post-badges">
+  <span class="post-badge badge-top">TOP</span>
+  <span class="post-badge badge-new">NEW</span>
+</span>
+</a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Copyright © 2024-2025 geek-rabb1t</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a>
+</div>
+      <div><a title="translated by Google" href="http://translate.google.com"><img src="/assets/images/greyscale-short.svg"></a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

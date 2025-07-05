@@ -60,7 +60,7 @@ Windowsの高精細トラックパッドとしての機能や、Macのマジッ�
 ## 設計データ
 
 - [Github リポジトリはこちら](https://github.com/geek-rabb1t/grt65-expkit)
-- [ファームウェアはこちら](https://github.com/geek-rabb1t/vial-qmk/tree/grt65_exp_kit/keyboards/geek_rabb1t/grt65_exp_kit)
+- [ファームウェアはこちら](https://github.com/geek-rabb1t/vial-qmk/tree/gr_master/keyboards/geek_rabb1t/grt65_exp_kit)
 
 ## その他記事
 - [Futabaのトラックパッドの制御ロジックについて](https://zenn.dev/geek_rabb1t/articles/a1940cf93c1766)
